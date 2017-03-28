@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Hello World</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+        <script type="text/javascript" charset="utf-8">
+        function success(result){
+            $('#searchNb').html(result.nbHits + ' docs');
+            $('#searchResult').html('');
+            $('#searchResult').append('<ul>');
+            result.docs.forEach(function (doc) {
+                                $('#searchResult').append('<li>' + doc.commonDmcId + '</li>');
+                                });
+            $('#searchResult').append('</ul>');
+            alert("success");
+        }
+        
+        function failure(result){
+            alert("失败");
+        }
+        
+        function search() {
+            var textValue = "football"; //document.getElementById("myText").value;
+            var indexPath = cordova.file.applicationDirectory+"www/storage/sdcard/full_text_index/";
+            //var indexPath = "/storage/sdcard/full_text_index/";
+            alert(indexPath);
+            LucenePlugin.init(indexPath, "content", 10);
+            LucenePlugin.search(textValue, success, failure);
+        }
+        </script>
+    </head>
+    <body style="padding-top:20px;">
+        <input id="myText" type="text"/>
+        <input type="button" id="btn" onclick="search()" value="Button" />
+        <span id="searchNb"/>
+        <div id="searchResult"/>
+    </body>
+</html>

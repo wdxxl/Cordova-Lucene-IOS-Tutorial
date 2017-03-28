@@ -1,0 +1,1132 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		02B8E1E8855B45828B26984F /* LCTopFieldDocs.h in Sources */ = {isa = PBXBuildFile; fileRef = 95D2C5E4B3984736A24C5923 /* LCTopFieldDocs.h */; };
+		02C048FC8C6D40B4968A6125 /* LCIndexReader.h in Sources */ = {isa = PBXBuildFile; fileRef = ADD3E0D705BC4DE1BE7CE869 /* LCIndexReader.h */; };
+		040626FE883C41A99A068954 /* LCFuzzyTermEnum.h in Sources */ = {isa = PBXBuildFile; fileRef = 21F693ADDE2B4EE690B261A9 /* LCFuzzyTermEnum.h */; };
+		062F2F64A3B44FC0AEA3DCB3 /* LCPhraseScorer.h in Sources */ = {isa = PBXBuildFile; fileRef = D931783B03F64C6EB7DF6B91 /* LCPhraseScorer.h */; };
+		06BF47CF934C435687305046 /* LCWildcardTermEnum.h in Sources */ = {isa = PBXBuildFile; fileRef = 441669A3F163459697124535 /* LCWildcardTermEnum.h */; };
+		087F575C817E4D7E8A3DC515 /* LCSegmentTermVector.h in Sources */ = {isa = PBXBuildFile; fileRef = B197D5B1E4014ADC8F08E12D /* LCSegmentTermVector.h */; };
+		09957DFFA0AF4B5699442272 /* LCTermVectorsReader.h in Sources */ = {isa = PBXBuildFile; fileRef = D228550C7CE74D6689F8226E /* LCTermVectorsReader.h */; };
+		0A83091D1C7F4323A37722C2 /* LCTokenFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = 8964F03963954482AD35E587 /* LCTokenFilter.h */; };
+		0B55B697583049F4AA0C81BD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CFB24736F44EE8BEDA2E1A /* libz.dylib */; };
+		0CD4DD1EDB0F478E8472DA27 /* LCBooleanQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = B5C6682E292949FCB0D9F67F /* LCBooleanQuery.h */; };
+		0E347042120A486CAE2DF195 /* LCDefaultSimilarity.h in Sources */ = {isa = PBXBuildFile; fileRef = E39122D5C15B449D92EF0570 /* LCDefaultSimilarity.h */; };
+		0F3AA6AD1C6A47A587CAD8F4 /* Util.h in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D9036612848DD9FE7EF5A /* Util.h */; };
+		0FD2A69524BA4E19BF2CDB03 /* LCPorterStemFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = E8D289E70EF348428CD9BEAE /* LCPorterStemFilter.h */; };
+		1037316DF1A341989524D49B /* LCTermBuffer.h in Sources */ = {isa = PBXBuildFile; fileRef = 7923EDE70C6441F0BD641E88 /* LCTermBuffer.h */; };
+		10DE7ECB53CF4E1FBDF48F0F /* LCLowerCaseFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = 02EBFA87FFEE4C488BC5000A /* LCLowerCaseFilter.h */; };
+		153526B9AE254C769C067FF5 /* LCSegmentMerger.h in Sources */ = {isa = PBXBuildFile; fileRef = 2B512A3E17584BCD8BAEF151 /* LCSegmentMerger.h */; };
+		177163D1038E4B97A813B088 /* LCTermDocs.h in Sources */ = {isa = PBXBuildFile; fileRef = 97E5905648BE4A99BDC46929 /* LCTermDocs.h */; };
+		1A80746926144151A64D4308 /* LCFilterIndexReader.h in Sources */ = {isa = PBXBuildFile; fileRef = 634FF62F080F4D2797414239 /* LCFilterIndexReader.h */; };
+		1B90EC3390614B3281F63B8F /* LCFieldCacheImpl.h in Sources */ = {isa = PBXBuildFile; fileRef = A78E8C30DDAD4E3FB0AD0630 /* LCFieldCacheImpl.h */; };
+		1C7E2DC0C991495F98CDDB79 /* LCTokenStream.h in Sources */ = {isa = PBXBuildFile; fileRef = A8BCDA0FEEF44FEE9D2A9778 /* LCTokenStream.h */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1E469045838A4B9EB0009423 /* LCTopDocCollector.h in Sources */ = {isa = PBXBuildFile; fileRef = 2356257A0EB1463F8FFF013A /* LCTopDocCollector.h */; };
+		1FF51724DBA547CF8C53AF63 /* LCFilteredTermEnum.h in Sources */ = {isa = PBXBuildFile; fileRef = 8F13056C55CC4E07A067A06A /* LCFilteredTermEnum.h */; };
+		20D6680897DE428D9BB40674 /* LCTermScorer.h in Sources */ = {isa = PBXBuildFile; fileRef = CFD0F6E223FD4389A9E188AF /* LCTermScorer.h */; };
+		21D1E907B904478EAA8864C1 /* LCMetadataAttribute.h in Sources */ = {isa = PBXBuildFile; fileRef = 6FCFBB2857844CEE8257DB6D /* LCMetadataAttribute.h */; };
+		24C5250950C246FAAACEAF71 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A46FC05899C49F58CA73E27 /* CoreLocation.framework */; };
+		25519FE404C34472AF82E121 /* LCFilteredQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = 36FEA15A3BDE40F9A61FDEBD /* LCFilteredQuery.h */; };
+		272D8A1C62864998B7B49221 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0B4394E5654E8BB4CE42BD /* MediaPlayer.framework */; };
+		27C3DE711072431AA84296E0 /* Index.h in Sources */ = {isa = PBXBuildFile; fileRef = 0CDF53F7E1B7483EB3F87D97 /* Index.h */; };
+		2A30C07B85234396BC80A640 /* LCPhrasePositions.h in Sources */ = {isa = PBXBuildFile; fileRef = 797463D8408D48259C0C8F87 /* LCPhrasePositions.h */; };
+		2BA8A78F605D49C5988CE0DB /* LCSegmentTermPositionVector.h in Sources */ = {isa = PBXBuildFile; fileRef = 1436EE46ACAD41AE87524D1B /* LCSegmentTermPositionVector.h */; };
+		2C42B653984E400F92BD6DE5 /* LCScoreDoc.h in Sources */ = {isa = PBXBuildFile; fileRef = C6ACD4856AD646E3860D7090 /* LCScoreDoc.h */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		31E8E03A1DD1488F8B511285 /* LCMultiTermQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = 9128C75F652D463A8BAA31A3 /* LCMultiTermQuery.h */; };
+		33F0B2BB83984B648DABA1C9 /* LCFSDirectory.h in Sources */ = {isa = PBXBuildFile; fileRef = 62F1AAC14D6D4EA3BC21BD1D /* LCFSDirectory.h */; };
+		3413B6CAEF494DF1A73487F4 /* LCStringReader.h in Sources */ = {isa = PBXBuildFile; fileRef = 481DB984AAA8463488890CCB /* LCStringReader.h */; };
+		343C804BF629457BBF46328D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7035EC1B151B46799FB96B5F /* CFNetwork.framework */; };
+		34C2CB687D934AB3B4D1A2C7 /* LCExactPhraseScorer.h in Sources */ = {isa = PBXBuildFile; fileRef = B6BA41BE68034FF59EA12385 /* LCExactPhraseScorer.h */; };
+		34CC9EFA729941768E895CB4 /* LCMultiPhraseQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = 3BA229F2F58545B2A4D75A34 /* LCMultiPhraseQuery.h */; };
+		34E20DF481F74070A4B433F0 /* Java.h in Sources */ = {isa = PBXBuildFile; fileRef = BEEA48FFDC0A4E269B8CB45C /* Java.h */; };
+		3887A9CDBD334A5D857FE1B0 /* LCTerm.h in Sources */ = {isa = PBXBuildFile; fileRef = 9FD88C4EEEA746AC99CA657A /* LCTerm.h */; };
+		38DB7AFB9E8B48ABA20B2746 /* LCFuzzyQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = 9C28CCFFEB064E36A18C420F /* LCFuzzyQuery.h */; };
+		39139CA60454414B999E60FB /* TokenHandler.h in Sources */ = {isa = PBXBuildFile; fileRef = 251E18A8E5E6441E90D64245 /* TokenHandler.h */; };
+		3C55BDEE7D03402C808E264F /* LCRAMFile.h in Sources */ = {isa = PBXBuildFile; fileRef = 027E47AB5B7C490B96E0E8C7 /* LCRAMFile.h */; };
+		3CD5B693FF3948938E576A22 /* LCField.h in Sources */ = {isa = PBXBuildFile; fileRef = E5FBBFD579DA465599640C83 /* LCField.h */; };
+		3D160CE598ED462DA010957B /* CodeHandler.h in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC0E2710B94BF1821687FD /* CodeHandler.h */; };
+		3DFEAC92A22643C0882C661F /* LCMMapDirectory.h in Sources */ = {isa = PBXBuildFile; fileRef = 708C4293348D4946ADA38D4F /* LCMMapDirectory.h */; };
+		40482F6AA0AA4F9B87962B35 /* LCDateFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = C95D0DA2D54B411AA3D9F2A3 /* LCDateFilter.h */; };
+		444581F030A249578A2D9458 /* LCRAMOutputStream.h in Sources */ = {isa = PBXBuildFile; fileRef = 77228AFD935C49FCB20FD5D8 /* LCRAMOutputStream.h */; };
+		466CD6A2868049668AFA2006 /* LCPriorityQueue.h in Sources */ = {isa = PBXBuildFile; fileRef = 30E8CDEEE9FD437C8C061CA5 /* LCPriorityQueue.h */; };
+		47850930373144F88DE0ED01 /* QueryParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 0E41CE11BED641458CBBC597 /* QueryParser.h */; };
+		47B535A5E3D345A4B0BE8A99 /* LucenePlugin.h in Sources */ = {isa = PBXBuildFile; fileRef = B70420E210B343698818BDFA /* LucenePlugin.h */; };
+		486C3E41E2404B959877C4D2 /* LCTermVectorOffsetInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = 391109D4C711433885EFF2C0 /* LCTermVectorOffsetInfo.h */; };
+		48A9D5D398D04B1489D336BC /* LCSegmentTermEnum.h in Sources */ = {isa = PBXBuildFile; fileRef = A874838A7BBF43488F363578 /* LCSegmentTermEnum.h */; };
+		4AF60107A1A64694BEFA1585 /* LCHits.h in Sources */ = {isa = PBXBuildFile; fileRef = 99A1C3264CAF49279D8D0637 /* LCHits.h */; };
+		4D48DCB7642F40D4A4368B48 /* LCMultiSearcher.h in Sources */ = {isa = PBXBuildFile; fileRef = 465B9157371E47829D875BB4 /* LCMultiSearcher.h */; };
+		4DE1272B9B1B4288ABC44185 /* LCFSIndexInput.h in Sources */ = {isa = PBXBuildFile; fileRef = 67E2FB48335A4650BD090AED /* LCFSIndexInput.h */; };
+		50443C3598824D0DAE058386 /* LCNonMatchingScorer.h in Sources */ = {isa = PBXBuildFile; fileRef = 4E7BEF7BD5E44299A947A043 /* LCNonMatchingScorer.h */; };
+		52CAC407909D41EFBA198A66 /* LCAnalyzer.h in Sources */ = {isa = PBXBuildFile; fileRef = 7BE401B573D841FB8C8AC6C8 /* LCAnalyzer.h */; };
+		544EAE56AAB7495D92E74BB8 /* LCSegmentTermDocs.h in Sources */ = {isa = PBXBuildFile; fileRef = 98D8A9A8D0254DA0A70CF922 /* LCSegmentTermDocs.h */; };
+		574F3904A56F4A08BDB488A8 /* LCReqOptSumScorer.h in Sources */ = {isa = PBXBuildFile; fileRef = C1005363D1BB4FD6944D9C6D /* LCReqOptSumScorer.h */; };
+		57F356C0994B45D4B3879DFE /* LCDocumentWriter.h in Sources */ = {isa = PBXBuildFile; fileRef = 6956E5213B2F4FE7BC2291D1 /* LCDocumentWriter.h */; };
+		59909CAD1DAE422CB8481B42 /* LCSegmentMergeInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = 457257A41A694E918F331472 /* LCSegmentMergeInfo.h */; };
+		59CAD4CDF8A2419AA4C40B8F /* LCCompoundFileReader.h in Sources */ = {isa = PBXBuildFile; fileRef = 39DA2A9A4C1F48B38C262CD8 /* LCCompoundFileReader.h */; };
+		5D0AA2D5954C44E29F97E000 /* LCDateTools.h in Sources */ = {isa = PBXBuildFile; fileRef = A57FF1DF741D4FB3966D9518 /* LCDateTools.h */; };
+		5D7D664E1C7E4D9BAD9D039E /* LCDocument.h in Sources */ = {isa = PBXBuildFile; fileRef = 686C72336A244C22A90640BB /* LCDocument.h */; };
+		5FB02E73320E4C87B1BD0DBA /* LCPhrasePrefixQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = A353A13879384F60A3A7520A /* LCPhrasePrefixQuery.h */; };
+		6024DF82C11C4A029DB29C54 /* LCSimpleAnalyzer.h in Sources */ = {isa = PBXBuildFile; fileRef = D533B28B635440D78E0045F4 /* LCSimpleAnalyzer.h */; };
+		62EE898A6E49428A95F6C75C /* NSData+Additions.h in Sources */ = {isa = PBXBuildFile; fileRef = 7FF950570AA6401299236A6F /* NSData+Additions.h */; };
+		65924C0E42BB460596EA4F36 /* LCPrefixQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = 00946CF012DF459B87BB380F /* LCPrefixQuery.h */; };
+		659AED4D2B3D49D29D76071C /* LCTokenizer.h in Sources */ = {isa = PBXBuildFile; fileRef = 0413376634BD4399A0F4168C /* LCTokenizer.h */; };
+		664CA9BF095A49EFBDDDF850 /* LCCompoundFileWriter.h in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BDF0D0A2F4515B5CFEB87 /* LCCompoundFileWriter.h */; };
+		673B932323664661A1314894 /* LCRangeFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = BF5010BA30DF4997A7C761FA /* LCRangeFilter.h */; };
+		6A7470AD2B684A62AEB3F0CA /* LCPhraseQueue.h in Sources */ = {isa = PBXBuildFile; fileRef = B474F0D00AC147B492A7DD51 /* LCPhraseQueue.h */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		6B14E7D1A5BC408C8E9D1563 /* LCTopFieldDocCollector.h in Sources */ = {isa = PBXBuildFile; fileRef = 6929C803A41F4D439F4209D8 /* LCTopFieldDocCollector.h */; };
+		6CFC31DD29FB48338B36AA66 /* LCFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = 1E58C4BA2930476A98601465 /* LCFilter.h */; };
+		6DA6F4C568E24070A60DAC10 /* LCQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = FB8D8BBC748E40C999F34A4A /* LCQuery.h */; };
+		6DE5B60AB19D455589B1834C /* LCReqExclScorer.h in Sources */ = {isa = PBXBuildFile; fileRef = D2D10284D3F646FC834C1200 /* LCReqExclScorer.h */; };
+		700E79F774C6433096067E13 /* PorterStemmer.h in Sources */ = {isa = PBXBuildFile; fileRef = BB3C5914F22745A9BD0A6543 /* PorterStemmer.h */; };
+		712263DEEC8B4E4C99BDA209 /* LCFieldDoc.h in Sources */ = {isa = PBXBuildFile; fileRef = 5A5AD90A00CA45CFB4EDF6A3 /* LCFieldDoc.h */; };
+		728FD2E6667D4815AD05FDA4 /* LCWeight.h in Sources */ = {isa = PBXBuildFile; fileRef = AA7A96F8E9224A97AE84B19D /* LCWeight.h */; };
+		73652D9D979349E1A917386F /* LCPerFieldAnalyzerWrapper.h in Sources */ = {isa = PBXBuildFile; fileRef = 50FFA50047A94708BFBA7245 /* LCPerFieldAnalyzerWrapper.h */; };
+		7532152373224355BF06EC7F /* LCIndexSearcher.h in Sources */ = {isa = PBXBuildFile; fileRef = 1BA3A286D317488AB013A800 /* LCIndexSearcher.h */; };
+		7732ADB62354497EBBD619E0 /* LCSearchable.h in Sources */ = {isa = PBXBuildFile; fileRef = D14E4E842115451CAA6A30BE /* LCSearchable.h */; };
+		79B5C855849C402795C16B25 /* LCNumberTools.h in Sources */ = {isa = PBXBuildFile; fileRef = D0381CDBF95B4192A85F33F3 /* LCNumberTools.h */; };
+		7B358B01ABF94D998E3995BC /* LCTermInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = B096D7A2F2A6488BA9CDEFBC /* LCTermInfo.h */; };
+		7E66B366138D4841AE4E5D95 /* LCWordlistLoader.h in Sources */ = {isa = PBXBuildFile; fileRef = 14312DDD28A44A0581961F0C /* LCWordlistLoader.h */; };
+		801C48F29EF84E99BCA2CF59 /* LCConjunctionScorer.h in Sources */ = {isa = PBXBuildFile; fileRef = 17331DCAF26746B28BC4F446 /* LCConjunctionScorer.h */; };
+		85D7FE7CD2484FA1902050C0 /* LCSortField.h in Sources */ = {isa = PBXBuildFile; fileRef = 1684E65C33224718B5A8DF5E /* LCSortField.h */; };
+		85E203CA78E04EDC98E65AC4 /* LCBitVector.h in Sources */ = {isa = PBXBuildFile; fileRef = AB129813F81A40E0985D1303 /* LCBitVector.h */; };
+		8620D61FEB9D4C198BB22AB2 /* LCQueryParser.h in Sources */ = {isa = PBXBuildFile; fileRef = CE4EAEEFF8E64E9EA0AC2743 /* LCQueryParser.h */; };
+		88E237753B24493C9B2AF2B5 /* LCIndexOutput.h in Sources */ = {isa = PBXBuildFile; fileRef = 99ACDBEAA4D84223A4280B52 /* LCIndexOutput.h */; };
+		8908026E90354B6DBB8F179D /* LCBooleanClause.h in Sources */ = {isa = PBXBuildFile; fileRef = F4BCBF07B5904F84A34F8B55 /* LCBooleanClause.h */; };
+		89A46E2176A6464AB360E720 /* LCWildcardQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = 79BED89FD83F47C7B7735355 /* LCWildcardQuery.h */; };
+		89EE85AFFF6646FDA9325800 /* LCToken.h in Sources */ = {isa = PBXBuildFile; fileRef = 02BA7507917F47D981BC5981 /* LCToken.h */; };
+		8AAAC9F1CB154207B1F333BA /* LCSortComparatorSource.h in Sources */ = {isa = PBXBuildFile; fileRef = 983326BFC16241798B6DC022 /* LCSortComparatorSource.h */; };
+		8BD1ACDDDE94413DA84CDBAB /* LCIndexManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 91236CFBFFD245E7A71E58D3 /* LCIndexManager.h */; };
+		8E716B25FFE2493BB8D557C8 /* LCSort.h in Sources */ = {isa = PBXBuildFile; fileRef = 40A717F9FD684A76A1E12F4C /* LCSort.h */; };
+		8F36B67D698543EA9E76F29B /* LCQueryFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = 5158CAD45D354ACCA504CAA0 /* LCQueryFilter.h */; };
+		8F745B920C924B7D9D1E9A37 /* LCSegmentInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = 178318488E1E4ECA92AD88FF /* LCSegmentInfo.h */; };
+		9054AC0DCDA34C6EB80B50EE /* LCFieldsReader.h in Sources */ = {isa = PBXBuildFile; fileRef = C32BC16114804D2693F64ECF /* LCFieldsReader.h */; };
+		90E39226045B4BF69B1DE0E9 /* LCLetterTokenizer.h in Sources */ = {isa = PBXBuildFile; fileRef = 3BD80F599BE648AC9079C10F /* LCLetterTokenizer.h */; };
+		9243D8371FBD496B96DDB759 /* LCScoreDocComparator.h in Sources */ = {isa = PBXBuildFile; fileRef = 8A7C514199774A27820C6FC3 /* LCScoreDocComparator.h */; };
+		92C306D3D2EE495D8E02B819 /* LCTermVectorsWriter.h in Sources */ = {isa = PBXBuildFile; fileRef = 5D978DF530BB4E2B96981529 /* LCTermVectorsWriter.h */; };
+		95A8C0AA90B94C88A875CCA3 /* LCMultiReader.h in Sources */ = {isa = PBXBuildFile; fileRef = EEADD1DAF9F049D583C19524 /* LCMultiReader.h */; };
+		96B43ED1DB614C52B6AA1C4D /* LCTermEnum.h in Sources */ = {isa = PBXBuildFile; fileRef = 43C7D4BF70B346C88327059E /* LCTermEnum.h */; };
+		99E3E89744DC42A2A39A27BE /* QueryHandler.h in Sources */ = {isa = PBXBuildFile; fileRef = 536510E4BC4E4D8189ADE0BA /* QueryHandler.h */; };
+		99E64D90785D4083B6BAA32A /* LCStopFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = 6F2797D452504E9EA6CFEF6F /* LCStopFilter.h */; };
+		9C4CAB0849644634AACAAB44 /* LCHitCollector.h in Sources */ = {isa = PBXBuildFile; fileRef = 0E441D5591CF45C2B0F96CB3 /* LCHitCollector.h */; };
+		9CCFEDD9F2044521B13C73F6 /* LCStopAnalyzer.h in Sources */ = {isa = PBXBuildFile; fileRef = 3CA82F4D54F943DDAF97181C /* LCStopAnalyzer.h */; };
+		9E92E329A1194BAA96966DB6 /* LCCharTokenizer.h in Sources */ = {isa = PBXBuildFile; fileRef = D10D8B119C7C4B629380E981 /* LCCharTokenizer.h */; };
+		9F54F38386E74E9C8C142055 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DDA0F1B7AE40719AE0CAFC /* libxml2.dylib */; };
+		A019B5DA85774C66BCD9D09A /* LCTermPositionVector.h in Sources */ = {isa = PBXBuildFile; fileRef = 7E608379C4E549A9A809F71E /* LCTermPositionVector.h */; };
+		A19BB103294646DDB59AF0DB /* Store.h in Sources */ = {isa = PBXBuildFile; fileRef = 0447C98AC8794091A2A2C6BB /* Store.h */; };
+		A5047C1A64A040B38546E2F1 /* LCReader.h in Sources */ = {isa = PBXBuildFile; fileRef = 4DD11B6AD0284D03A3764896 /* LCReader.h */; };
+		A57D53BD608A40CF884D5536 /* LCScorer.h in Sources */ = {isa = PBXBuildFile; fileRef = A9CBD299E06D4D59BA22C77D /* LCScorer.h */; };
+		A6CF774CA40944C5AE567ECF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F84107F199443C78CDD047B /* Security.framework */; };
+		A6DF334C56004A6AA4E12080 /* LCBooleanScorer.h in Sources */ = {isa = PBXBuildFile; fileRef = C460B94FB12B4E7E830EB09A /* LCBooleanScorer.h */; };
+		A8CE154F9145443FA2CC37E5 /* LCImporter.h in Sources */ = {isa = PBXBuildFile; fileRef = 084DE7B622274563B746E469 /* LCImporter.h */; };
+		A99DCCE296D543D98D7178EA /* LCCachingWrapperFilter.h in Sources */ = {isa = PBXBuildFile; fileRef = B1EDC1598F74486F84984208 /* LCCachingWrapperFilter.h */; };
+		AAACC28126724FFDAE13FEB7 /* LCSegmentMergeQueue.h in Sources */ = {isa = PBXBuildFile; fileRef = 701D3C4824C64D2897D8E566 /* LCSegmentMergeQueue.h */; };
+		AE326706A3A044BCB03D2A8F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C59168ABB74A12A44954E0 /* OpenGLES.framework */; };
+		AE7D7554F09342D5B750FF75 /* LCSegmentTermPositions.h in Sources */ = {isa = PBXBuildFile; fileRef = 275BC47ABD9F4539A832D772 /* LCSegmentTermPositions.h */; };
+		B12348E2AC1443B6BB6C23DF /* LCSortComparator.h in Sources */ = {isa = PBXBuildFile; fileRef = A7047B48643A4829B39534A2 /* LCSortComparator.h */; };
+		B201F23BA4484107B317A9C2 /* LCLowerCaseTokenizer.h in Sources */ = {isa = PBXBuildFile; fileRef = EEDCC1BFD6004B1AB3891A72 /* LCLowerCaseTokenizer.h */; };
+		B2EA25645C4A433FB1B5A91E /* LCFieldInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = 48827AE94D584ED698FD5B58 /* LCFieldInfo.h */; };
+		B350982C1E0A43C8991B6EF6 /* LCTermPositions.h in Sources */ = {isa = PBXBuildFile; fileRef = A5EB75DD15F84CB4BB2B221D /* LCTermPositions.h */; };
+		B5588FD27A4A4DB5B0B2D1E3 /* LCTopDocs.h in Sources */ = {isa = PBXBuildFile; fileRef = 9E66C5C10F4844B2B0B24E58 /* LCTopDocs.h */; };
+		B5CA11FF3D81471E998B0F87 /* LCDirectory.h in Sources */ = {isa = PBXBuildFile; fileRef = 8CD394A56025473FB5245649 /* LCDirectory.h */; };
+		BB022A372E354C789D69E278 /* LCQueryTermVector.h in Sources */ = {isa = PBXBuildFile; fileRef = 75CD01D6DA81460BA1038497 /* LCQueryTermVector.h */; };
+		BDCBC247D4D94386BADEAE41 /* LCFieldDocSortedHitQueue.h in Sources */ = {isa = PBXBuildFile; fileRef = 42563B37D87E4BE8914831BF /* LCFieldDocSortedHitQueue.h */; };
+		BECB6250998C48CBA9F6F47D /* LCTermFreqVector.h in Sources */ = {isa = PBXBuildFile; fileRef = F416BE39907B4095893F66C6 /* LCTermFreqVector.h */; };
+		BF9CFFCDBD754899880AAD07 /* Search.h in Sources */ = {isa = PBXBuildFile; fileRef = 05BEC7A992CB4F168C724E9A /* Search.h */; };
+		C030AFD1934C44A58786A522 /* LCWhitespaceAnalyzer.h in Sources */ = {isa = PBXBuildFile; fileRef = 0E54A944AD7D4A33B1884D64 /* LCWhitespaceAnalyzer.h */; };
+		C5054943884E4CFE98B9186B /* LCSearcher.h in Sources */ = {isa = PBXBuildFile; fileRef = 0F84D9D053C54239B7A5A913 /* LCSearcher.h */; };
+		C51ABDA0DCFF4CD28FF5E268 /* LCIndexModifier.h in Sources */ = {isa = PBXBuildFile; fileRef = C3E223F6384D4A248BB69EF1 /* LCIndexModifier.h */; };
+		C54551C17907460A97F7026D /* LCRAMInputStream.h in Sources */ = {isa = PBXBuildFile; fileRef = C08CE08268AE4A0C96E520DB /* LCRAMInputStream.h */; };
+		C776CE154FD94CD0A5E04A37 /* LCHitIterator.h in Sources */ = {isa = PBXBuildFile; fileRef = F0B070248991400AAA16E9E9 /* LCHitIterator.h */; };
+		C815EB86EDDC4842B503AD79 /* LuceneKit.h in Sources */ = {isa = PBXBuildFile; fileRef = BDDC4B2245FF4D48BC313758 /* LuceneKit.h */; };
+		C84CA8E8F70D42958A35CDB0 /* LCTermQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = 9689120EC9DB4A29BE1B31C0 /* LCTermQuery.h */; };
+		C894A848845041D3ADCE4B49 /* LCHitQueue.h in Sources */ = {isa = PBXBuildFile; fileRef = 1B2B7DE542EF492E8ECFB3E1 /* LCHitQueue.h */; };
+		CE18CCDDC8EF438CBDDB01F6 /* LCFSIndexOutput.h in Sources */ = {isa = PBXBuildFile; fileRef = 09D09062A6B0408DA5376C07 /* LCFSIndexOutput.h */; };
+		CE9DEB06D12047CDBA95CFCC /* LCSegmentInfos.h in Sources */ = {isa = PBXBuildFile; fileRef = 284808F2849B4A9D9ED47753 /* LCSegmentInfos.h */; };
+		CFFC4D04F9844DC298AC6021 /* GNUstep.h in Sources */ = {isa = PBXBuildFile; fileRef = 27F173D988D6467CA1FF0358 /* GNUstep.h */; };
+		D66C51609AE04EFBB8EE9368 /* LCSmallFloat.h in Sources */ = {isa = PBXBuildFile; fileRef = 04FC1AEC9C17477C94A19E3A /* LCSmallFloat.h */; };
+		D6BE3D38E0C74339A35CF518 /* LCSimilarity.h in Sources */ = {isa = PBXBuildFile; fileRef = 9116166644694C6DA94B38CF /* LCSimilarity.h */; };
+		D78DB68792BC4AA5A81DD7E4 /* LCTermInfosWriter.h in Sources */ = {isa = PBXBuildFile; fileRef = 05E8E51F252044F68DBCC7A4 /* LCTermInfosWriter.h */; };
+		D8FB9553CDD0452392004A2D /* LCSimilarityDelegator.h in Sources */ = {isa = PBXBuildFile; fileRef = B1D6BFF4C9B742E9A33C37FB /* LCSimilarityDelegator.h */; };
+		DB32A8D38BEC48B6A3CA312A /* LCHit.h in Sources */ = {isa = PBXBuildFile; fileRef = CBAF39D6524E47919CB851D4 /* LCHit.h */; };
+		DC09C65150FB41DAAA3C5550 /* libS4iOSLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39517B1A79A145CEBAF70486 /* libS4iOSLib.a */; };
+		DD75F22CD347483097EB74CA /* LCMultipleTermPositions.h in Sources */ = {isa = PBXBuildFile; fileRef = 6DE8EB6161C84C958698CD49 /* LCMultipleTermPositions.h */; };
+		DDB7CD4DEF944E4AB3DF2F88 /* LCFieldSortedHitQueue.h in Sources */ = {isa = PBXBuildFile; fileRef = 69C46D54C34C429F95ED79AA /* LCFieldSortedHitQueue.h */; };
+		E05803F363D7444EA0F7FF2F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8514829973F54905ADA81903 /* MessageUI.framework */; };
+		E0678D6A18FF4960B7E78134 /* LCWhitespaceTokenizer.h in Sources */ = {isa = PBXBuildFile; fileRef = 479DD046731B47BBBAE6384B /* LCWhitespaceTokenizer.h */; };
+		E0FA629C9206431B961ADEAB /* Document.h in Sources */ = {isa = PBXBuildFile; fileRef = 1C58DBA1B1B048EE81E9EE2E /* Document.h */; };
+		E397144EA29445408A45ADA9 /* LucenePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DFD2666703468AAD983AD5 /* LucenePlugin.m */; };
+		E3E28528148A4577B9D29210 /* LCIndexWriter.h in Sources */ = {isa = PBXBuildFile; fileRef = 53AD74C6C7FF47B68A4A4CF1 /* LCIndexWriter.h */; };
+		E3EEF3FF7EF748DE8CA52FD9 /* LCTermInfosReader.h in Sources */ = {isa = PBXBuildFile; fileRef = 248C66108AC0477790B39E98 /* LCTermInfosReader.h */; };
+		E45B5EB9042A42598D15926D /* LCFieldInfos.h in Sources */ = {isa = PBXBuildFile; fileRef = D7E8F36B693B4F929A02DCBD /* LCFieldInfos.h */; };
+		E4BCCDD2391A47FDAA25A39D /* LCSegmentReader.h in Sources */ = {isa = PBXBuildFile; fileRef = FC39D4C23DC947318C1C579F /* LCSegmentReader.h */; };
+		E5FB17FC4E9644E8956A36CB /* LCRangeQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = AEC26B6336A34260A96B3E74 /* LCRangeQuery.h */; };
+		E62C80ACF815466F98E74E74 /* libS4LuceneLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3658066C1C1476B898D2EC2 /* libS4LuceneLib.a */; };
+		EA888C3944154EA2B3B5DBEE /* LCTextImporter.h in Sources */ = {isa = PBXBuildFile; fileRef = 192B511A31D7428E90D6747F /* LCTextImporter.h */; };
+		EB90DF0F5B4B45DD899A0589 /* LCDisjunctionSumScorer.h in Sources */ = {isa = PBXBuildFile; fileRef = 2985749160F041ADA241A0BA /* LCDisjunctionSumScorer.h */; };
+		EC357E47E7EE4DEBB0624C25 /* LCIndexInput.h in Sources */ = {isa = PBXBuildFile; fileRef = 4A4E7709D49E4AB087EED9E8 /* LCIndexInput.h */; };
+		EFD88F423C554F61BBBAB283 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFA2F73305448139817CE05 /* SystemConfiguration.framework */; };
+		F1D611E0F4A245809C46CDA8 /* NSString+Additions.h in Sources */ = {isa = PBXBuildFile; fileRef = CBE0195F45FC46F29EBB6779 /* NSString+Additions.h */; };
+		F360A798ADD74F089DD8743B /* CodeParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 091574CC71694E27AE1F9DDB /* CodeParser.h */; };
+		F47CCCF6625647C99031D010 /* LCFieldCache.h in Sources */ = {isa = PBXBuildFile; fileRef = 0516BF4D938C45AB87E737B9 /* LCFieldCache.h */; };
+		FA260ABE364D4819A052E29E /* LCFieldsWriter.h in Sources */ = {isa = PBXBuildFile; fileRef = 29CDE3AB91EA4566A398C8A7 /* LCFieldsWriter.h */; };
+		FB688FD143694686B5ABA46B /* LCPhraseQuery.h in Sources */ = {isa = PBXBuildFile; fileRef = 3EAAD0AEF030411B900AD3B8 /* LCPhraseQuery.h */; };
+		FC076C046B8042C2AB86C107 /* Analysis.h in Sources */ = {isa = PBXBuildFile; fileRef = D3787952EB674A55968C73EC /* Analysis.h */; };
+		FE47F0AFA3BA40AF85E0DB2A /* LCExplanation.h in Sources */ = {isa = PBXBuildFile; fileRef = 2D585D8AAC72422A80F1A94B /* LCExplanation.h */; };
+		FEC292E36EE5452EA65EBE9E /* LCRAMDirectory.h in Sources */ = {isa = PBXBuildFile; fileRef = E5B66387612B45F38BCA642C /* LCRAMDirectory.h */; };
+		03A0E3CC36F64919B7587400 /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F9494BFD0343C0A3DFB2F5 /* CDVFile.m */; };
+		7D113AD9CB85468285A93456 /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0056A271B5A546AE90E6FE4B /* CDVLocalFilesystem.m */; };
+		6637EBFD218B4A00847BFF47 /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 85CC9C5ED2834753B7304518 /* CDVAssetLibraryFilesystem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00946CF012DF459B87BB380F /* LCPrefixQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCPrefixQuery.h; path = "sqli-cordova-lucene-plugin/LCPrefixQuery.h"; sourceTree = "<group>"; };
+		00CFB24736F44EE8BEDA2E1A /* libz.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LuceneApp/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		027E47AB5B7C490B96E0E8C7 /* LCRAMFile.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCRAMFile.h; path = "sqli-cordova-lucene-plugin/LCRAMFile.h"; sourceTree = "<group>"; };
+		02BA7507917F47D981BC5981 /* LCToken.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCToken.h; path = "sqli-cordova-lucene-plugin/LCToken.h"; sourceTree = "<group>"; };
+		02EBFA87FFEE4C488BC5000A /* LCLowerCaseFilter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCLowerCaseFilter.h; path = "sqli-cordova-lucene-plugin/LCLowerCaseFilter.h"; sourceTree = "<group>"; };
+		0413376634BD4399A0F4168C /* LCTokenizer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTokenizer.h; path = "sqli-cordova-lucene-plugin/LCTokenizer.h"; sourceTree = "<group>"; };
+		0447C98AC8794091A2A2C6BB /* Store.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Store.h; path = "sqli-cordova-lucene-plugin/Store.h"; sourceTree = "<group>"; };
+		04FC1AEC9C17477C94A19E3A /* LCSmallFloat.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSmallFloat.h; path = "sqli-cordova-lucene-plugin/LCSmallFloat.h"; sourceTree = "<group>"; };
+		0516BF4D938C45AB87E737B9 /* LCFieldCache.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFieldCache.h; path = "sqli-cordova-lucene-plugin/LCFieldCache.h"; sourceTree = "<group>"; };
+		05BEC7A992CB4F168C724E9A /* Search.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Search.h; path = "sqli-cordova-lucene-plugin/Search.h"; sourceTree = "<group>"; };
+		05E8E51F252044F68DBCC7A4 /* LCTermInfosWriter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermInfosWriter.h; path = "sqli-cordova-lucene-plugin/LCTermInfosWriter.h"; sourceTree = "<group>"; };
+		084DE7B622274563B746E469 /* LCImporter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCImporter.h; path = "sqli-cordova-lucene-plugin/LCImporter.h"; sourceTree = "<group>"; };
+		091574CC71694E27AE1F9DDB /* CodeParser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CodeParser.h; path = "sqli-cordova-lucene-plugin/CodeParser.h"; sourceTree = "<group>"; };
+		09D09062A6B0408DA5376C07 /* LCFSIndexOutput.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFSIndexOutput.h; path = "sqli-cordova-lucene-plugin/LCFSIndexOutput.h"; sourceTree = "<group>"; };
+		0CDF53F7E1B7483EB3F87D97 /* Index.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Index.h; path = "sqli-cordova-lucene-plugin/Index.h"; sourceTree = "<group>"; };
+		0E41CE11BED641458CBBC597 /* QueryParser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = QueryParser.h; path = "sqli-cordova-lucene-plugin/QueryParser.h"; sourceTree = "<group>"; };
+		0E441D5591CF45C2B0F96CB3 /* LCHitCollector.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCHitCollector.h; path = "sqli-cordova-lucene-plugin/LCHitCollector.h"; sourceTree = "<group>"; };
+		0E54A944AD7D4A33B1884D64 /* LCWhitespaceAnalyzer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCWhitespaceAnalyzer.h; path = "sqli-cordova-lucene-plugin/LCWhitespaceAnalyzer.h"; sourceTree = "<group>"; };
+		0F84D9D053C54239B7A5A913 /* LCSearcher.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSearcher.h; path = "sqli-cordova-lucene-plugin/LCSearcher.h"; sourceTree = "<group>"; };
+		14312DDD28A44A0581961F0C /* LCWordlistLoader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCWordlistLoader.h; path = "sqli-cordova-lucene-plugin/LCWordlistLoader.h"; sourceTree = "<group>"; };
+		1436EE46ACAD41AE87524D1B /* LCSegmentTermPositionVector.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentTermPositionVector.h; path = "sqli-cordova-lucene-plugin/LCSegmentTermPositionVector.h"; sourceTree = "<group>"; };
+		1684E65C33224718B5A8DF5E /* LCSortField.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSortField.h; path = "sqli-cordova-lucene-plugin/LCSortField.h"; sourceTree = "<group>"; };
+		17331DCAF26746B28BC4F446 /* LCConjunctionScorer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCConjunctionScorer.h; path = "sqli-cordova-lucene-plugin/LCConjunctionScorer.h"; sourceTree = "<group>"; };
+		178318488E1E4ECA92AD88FF /* LCSegmentInfo.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentInfo.h; path = "sqli-cordova-lucene-plugin/LCSegmentInfo.h"; sourceTree = "<group>"; };
+		192B511A31D7428E90D6747F /* LCTextImporter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTextImporter.h; path = "sqli-cordova-lucene-plugin/LCTextImporter.h"; sourceTree = "<group>"; };
+		1B2B7DE542EF492E8ECFB3E1 /* LCHitQueue.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCHitQueue.h; path = "sqli-cordova-lucene-plugin/LCHitQueue.h"; sourceTree = "<group>"; };
+		1BA3A286D317488AB013A800 /* LCIndexSearcher.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCIndexSearcher.h; path = "sqli-cordova-lucene-plugin/LCIndexSearcher.h"; sourceTree = "<group>"; };
+		1C58DBA1B1B048EE81E9EE2E /* Document.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Document.h; path = "sqli-cordova-lucene-plugin/Document.h"; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* LuceneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuceneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E58C4BA2930476A98601465 /* LCFilter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFilter.h; path = "sqli-cordova-lucene-plugin/LCFilter.h"; sourceTree = "<group>"; };
+		21F693ADDE2B4EE690B261A9 /* LCFuzzyTermEnum.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFuzzyTermEnum.h; path = "sqli-cordova-lucene-plugin/LCFuzzyTermEnum.h"; sourceTree = "<group>"; };
+		2356257A0EB1463F8FFF013A /* LCTopDocCollector.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTopDocCollector.h; path = "sqli-cordova-lucene-plugin/LCTopDocCollector.h"; sourceTree = "<group>"; };
+		248C66108AC0477790B39E98 /* LCTermInfosReader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermInfosReader.h; path = "sqli-cordova-lucene-plugin/LCTermInfosReader.h"; sourceTree = "<group>"; };
+		251E18A8E5E6441E90D64245 /* TokenHandler.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TokenHandler.h; path = "sqli-cordova-lucene-plugin/TokenHandler.h"; sourceTree = "<group>"; };
+		25DFD2666703468AAD983AD5 /* LucenePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = LucenePlugin.m; path = "sqli-cordova-lucene-plugin/LucenePlugin.m"; sourceTree = "<group>"; };
+		275BC47ABD9F4539A832D772 /* LCSegmentTermPositions.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentTermPositions.h; path = "sqli-cordova-lucene-plugin/LCSegmentTermPositions.h"; sourceTree = "<group>"; };
+		27F173D988D6467CA1FF0358 /* GNUstep.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = GNUstep.h; path = "sqli-cordova-lucene-plugin/GNUstep.h"; sourceTree = "<group>"; };
+		284808F2849B4A9D9ED47753 /* LCSegmentInfos.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentInfos.h; path = "sqli-cordova-lucene-plugin/LCSegmentInfos.h"; sourceTree = "<group>"; };
+		2985749160F041ADA241A0BA /* LCDisjunctionSumScorer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCDisjunctionSumScorer.h; path = "sqli-cordova-lucene-plugin/LCDisjunctionSumScorer.h"; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29CDE3AB91EA4566A398C8A7 /* LCFieldsWriter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFieldsWriter.h; path = "sqli-cordova-lucene-plugin/LCFieldsWriter.h"; sourceTree = "<group>"; };
+		2A2D9036612848DD9FE7EF5A /* Util.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Util.h; path = "sqli-cordova-lucene-plugin/Util.h"; sourceTree = "<group>"; };
+		2B512A3E17584BCD8BAEF151 /* LCSegmentMerger.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentMerger.h; path = "sqli-cordova-lucene-plugin/LCSegmentMerger.h"; sourceTree = "<group>"; };
+		2D585D8AAC72422A80F1A94B /* LCExplanation.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCExplanation.h; path = "sqli-cordova-lucene-plugin/LCExplanation.h"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		30E8CDEEE9FD437C8C061CA5 /* LCPriorityQueue.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCPriorityQueue.h; path = "sqli-cordova-lucene-plugin/LCPriorityQueue.h"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* LuceneApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LuceneApp-Prefix.pch"; sourceTree = "<group>"; };
+		36FEA15A3BDE40F9A61FDEBD /* LCFilteredQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFilteredQuery.h; path = "sqli-cordova-lucene-plugin/LCFilteredQuery.h"; sourceTree = "<group>"; };
+		391109D4C711433885EFF2C0 /* LCTermVectorOffsetInfo.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermVectorOffsetInfo.h; path = "sqli-cordova-lucene-plugin/LCTermVectorOffsetInfo.h"; sourceTree = "<group>"; };
+		39517B1A79A145CEBAF70486 /* libS4iOSLib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libS4iOSLib.a; sourceTree = "<group>"; };
+		39DA2A9A4C1F48B38C262CD8 /* LCCompoundFileReader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCCompoundFileReader.h; path = "sqli-cordova-lucene-plugin/LCCompoundFileReader.h"; sourceTree = "<group>"; };
+		3BA229F2F58545B2A4D75A34 /* LCMultiPhraseQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCMultiPhraseQuery.h; path = "sqli-cordova-lucene-plugin/LCMultiPhraseQuery.h"; sourceTree = "<group>"; };
+		3BD80F599BE648AC9079C10F /* LCLetterTokenizer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCLetterTokenizer.h; path = "sqli-cordova-lucene-plugin/LCLetterTokenizer.h"; sourceTree = "<group>"; };
+		3CA82F4D54F943DDAF97181C /* LCStopAnalyzer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCStopAnalyzer.h; path = "sqli-cordova-lucene-plugin/LCStopAnalyzer.h"; sourceTree = "<group>"; };
+		3EAAD0AEF030411B900AD3B8 /* LCPhraseQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCPhraseQuery.h; path = "sqli-cordova-lucene-plugin/LCPhraseQuery.h"; sourceTree = "<group>"; };
+		40A717F9FD684A76A1E12F4C /* LCSort.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSort.h; path = "sqli-cordova-lucene-plugin/LCSort.h"; sourceTree = "<group>"; };
+		42563B37D87E4BE8914831BF /* LCFieldDocSortedHitQueue.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFieldDocSortedHitQueue.h; path = "sqli-cordova-lucene-plugin/LCFieldDocSortedHitQueue.h"; sourceTree = "<group>"; };
+		43C7D4BF70B346C88327059E /* LCTermEnum.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermEnum.h; path = "sqli-cordova-lucene-plugin/LCTermEnum.h"; sourceTree = "<group>"; };
+		441669A3F163459697124535 /* LCWildcardTermEnum.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCWildcardTermEnum.h; path = "sqli-cordova-lucene-plugin/LCWildcardTermEnum.h"; sourceTree = "<group>"; };
+		457257A41A694E918F331472 /* LCSegmentMergeInfo.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentMergeInfo.h; path = "sqli-cordova-lucene-plugin/LCSegmentMergeInfo.h"; sourceTree = "<group>"; };
+		465B9157371E47829D875BB4 /* LCMultiSearcher.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCMultiSearcher.h; path = "sqli-cordova-lucene-plugin/LCMultiSearcher.h"; sourceTree = "<group>"; };
+		479DD046731B47BBBAE6384B /* LCWhitespaceTokenizer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCWhitespaceTokenizer.h; path = "sqli-cordova-lucene-plugin/LCWhitespaceTokenizer.h"; sourceTree = "<group>"; };
+		481DB984AAA8463488890CCB /* LCStringReader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCStringReader.h; path = "sqli-cordova-lucene-plugin/LCStringReader.h"; sourceTree = "<group>"; };
+		48827AE94D584ED698FD5B58 /* LCFieldInfo.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFieldInfo.h; path = "sqli-cordova-lucene-plugin/LCFieldInfo.h"; sourceTree = "<group>"; };
+		4A4E7709D49E4AB087EED9E8 /* LCIndexInput.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCIndexInput.h; path = "sqli-cordova-lucene-plugin/LCIndexInput.h"; sourceTree = "<group>"; };
+		4DD11B6AD0284D03A3764896 /* LCReader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCReader.h; path = "sqli-cordova-lucene-plugin/LCReader.h"; sourceTree = "<group>"; };
+		4E7BEF7BD5E44299A947A043 /* LCNonMatchingScorer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCNonMatchingScorer.h; path = "sqli-cordova-lucene-plugin/LCNonMatchingScorer.h"; sourceTree = "<group>"; };
+		50FFA50047A94708BFBA7245 /* LCPerFieldAnalyzerWrapper.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCPerFieldAnalyzerWrapper.h; path = "sqli-cordova-lucene-plugin/LCPerFieldAnalyzerWrapper.h"; sourceTree = "<group>"; };
+		5158CAD45D354ACCA504CAA0 /* LCQueryFilter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCQueryFilter.h; path = "sqli-cordova-lucene-plugin/LCQueryFilter.h"; sourceTree = "<group>"; };
+		536510E4BC4E4D8189ADE0BA /* QueryHandler.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = QueryHandler.h; path = "sqli-cordova-lucene-plugin/QueryHandler.h"; sourceTree = "<group>"; };
+		53AD74C6C7FF47B68A4A4CF1 /* LCIndexWriter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCIndexWriter.h; path = "sqli-cordova-lucene-plugin/LCIndexWriter.h"; sourceTree = "<group>"; };
+		5A46FC05899C49F58CA73E27 /* CoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5A5AD90A00CA45CFB4EDF6A3 /* LCFieldDoc.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFieldDoc.h; path = "sqli-cordova-lucene-plugin/LCFieldDoc.h"; sourceTree = "<group>"; };
+		5CFA2F73305448139817CE05 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5D978DF530BB4E2B96981529 /* LCTermVectorsWriter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermVectorsWriter.h; path = "sqli-cordova-lucene-plugin/LCTermVectorsWriter.h"; sourceTree = "<group>"; };
+		62F1AAC14D6D4EA3BC21BD1D /* LCFSDirectory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFSDirectory.h; path = "sqli-cordova-lucene-plugin/LCFSDirectory.h"; sourceTree = "<group>"; };
+		634FF62F080F4D2797414239 /* LCFilterIndexReader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFilterIndexReader.h; path = "sqli-cordova-lucene-plugin/LCFilterIndexReader.h"; sourceTree = "<group>"; };
+		67E2FB48335A4650BD090AED /* LCFSIndexInput.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFSIndexInput.h; path = "sqli-cordova-lucene-plugin/LCFSIndexInput.h"; sourceTree = "<group>"; };
+		686C72336A244C22A90640BB /* LCDocument.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCDocument.h; path = "sqli-cordova-lucene-plugin/LCDocument.h"; sourceTree = "<group>"; };
+		6929C803A41F4D439F4209D8 /* LCTopFieldDocCollector.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTopFieldDocCollector.h; path = "sqli-cordova-lucene-plugin/LCTopFieldDocCollector.h"; sourceTree = "<group>"; };
+		6956E5213B2F4FE7BC2291D1 /* LCDocumentWriter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCDocumentWriter.h; path = "sqli-cordova-lucene-plugin/LCDocumentWriter.h"; sourceTree = "<group>"; };
+		69C46D54C34C429F95ED79AA /* LCFieldSortedHitQueue.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFieldSortedHitQueue.h; path = "sqli-cordova-lucene-plugin/LCFieldSortedHitQueue.h"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = LuceneApp/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		6DDC0E2710B94BF1821687FD /* CodeHandler.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CodeHandler.h; path = "sqli-cordova-lucene-plugin/CodeHandler.h"; sourceTree = "<group>"; };
+		6DE8EB6161C84C958698CD49 /* LCMultipleTermPositions.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCMultipleTermPositions.h; path = "sqli-cordova-lucene-plugin/LCMultipleTermPositions.h"; sourceTree = "<group>"; };
+		6F2797D452504E9EA6CFEF6F /* LCStopFilter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCStopFilter.h; path = "sqli-cordova-lucene-plugin/LCStopFilter.h"; sourceTree = "<group>"; };
+		6FCFBB2857844CEE8257DB6D /* LCMetadataAttribute.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCMetadataAttribute.h; path = "sqli-cordova-lucene-plugin/LCMetadataAttribute.h"; sourceTree = "<group>"; };
+		701D3C4824C64D2897D8E566 /* LCSegmentMergeQueue.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentMergeQueue.h; path = "sqli-cordova-lucene-plugin/LCSegmentMergeQueue.h"; sourceTree = "<group>"; };
+		7035EC1B151B46799FB96B5F /* CFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		708C4293348D4946ADA38D4F /* LCMMapDirectory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCMMapDirectory.h; path = "sqli-cordova-lucene-plugin/LCMMapDirectory.h"; sourceTree = "<group>"; };
+		75CD01D6DA81460BA1038497 /* LCQueryTermVector.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCQueryTermVector.h; path = "sqli-cordova-lucene-plugin/LCQueryTermVector.h"; sourceTree = "<group>"; };
+		77228AFD935C49FCB20FD5D8 /* LCRAMOutputStream.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCRAMOutputStream.h; path = "sqli-cordova-lucene-plugin/LCRAMOutputStream.h"; sourceTree = "<group>"; };
+		7923EDE70C6441F0BD641E88 /* LCTermBuffer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermBuffer.h; path = "sqli-cordova-lucene-plugin/LCTermBuffer.h"; sourceTree = "<group>"; };
+		797463D8408D48259C0C8F87 /* LCPhrasePositions.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCPhrasePositions.h; path = "sqli-cordova-lucene-plugin/LCPhrasePositions.h"; sourceTree = "<group>"; };
+		79BED89FD83F47C7B7735355 /* LCWildcardQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCWildcardQuery.h; path = "sqli-cordova-lucene-plugin/LCWildcardQuery.h"; sourceTree = "<group>"; };
+		7BE401B573D841FB8C8AC6C8 /* LCAnalyzer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCAnalyzer.h; path = "sqli-cordova-lucene-plugin/LCAnalyzer.h"; sourceTree = "<group>"; };
+		7E608379C4E549A9A809F71E /* LCTermPositionVector.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermPositionVector.h; path = "sqli-cordova-lucene-plugin/LCTermPositionVector.h"; sourceTree = "<group>"; };
+		7F84107F199443C78CDD047B /* Security.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7FF950570AA6401299236A6F /* NSData+Additions.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "NSData+Additions.h"; path = "sqli-cordova-lucene-plugin/NSData+Additions.h"; sourceTree = "<group>"; };
+		8514829973F54905ADA81903 /* MessageUI.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8964F03963954482AD35E587 /* LCTokenFilter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTokenFilter.h; path = "sqli-cordova-lucene-plugin/LCTokenFilter.h"; sourceTree = "<group>"; };
+		8A7C514199774A27820C6FC3 /* LCScoreDocComparator.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCScoreDocComparator.h; path = "sqli-cordova-lucene-plugin/LCScoreDocComparator.h"; sourceTree = "<group>"; };
+		8B1BDF0D0A2F4515B5CFEB87 /* LCCompoundFileWriter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCCompoundFileWriter.h; path = "sqli-cordova-lucene-plugin/LCCompoundFileWriter.h"; sourceTree = "<group>"; };
+		8CD394A56025473FB5245649 /* LCDirectory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCDirectory.h; path = "sqli-cordova-lucene-plugin/LCDirectory.h"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* LuceneApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "LuceneApp-Info.plist"; path = "LuceneApp/LuceneApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		8F13056C55CC4E07A067A06A /* LCFilteredTermEnum.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFilteredTermEnum.h; path = "sqli-cordova-lucene-plugin/LCFilteredTermEnum.h"; sourceTree = "<group>"; };
+		9116166644694C6DA94B38CF /* LCSimilarity.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSimilarity.h; path = "sqli-cordova-lucene-plugin/LCSimilarity.h"; sourceTree = "<group>"; };
+		91236CFBFFD245E7A71E58D3 /* LCIndexManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCIndexManager.h; path = "sqli-cordova-lucene-plugin/LCIndexManager.h"; sourceTree = "<group>"; };
+		9128C75F652D463A8BAA31A3 /* LCMultiTermQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCMultiTermQuery.h; path = "sqli-cordova-lucene-plugin/LCMultiTermQuery.h"; sourceTree = "<group>"; };
+		95D2C5E4B3984736A24C5923 /* LCTopFieldDocs.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTopFieldDocs.h; path = "sqli-cordova-lucene-plugin/LCTopFieldDocs.h"; sourceTree = "<group>"; };
+		9689120EC9DB4A29BE1B31C0 /* LCTermQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermQuery.h; path = "sqli-cordova-lucene-plugin/LCTermQuery.h"; sourceTree = "<group>"; };
+		97E5905648BE4A99BDC46929 /* LCTermDocs.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermDocs.h; path = "sqli-cordova-lucene-plugin/LCTermDocs.h"; sourceTree = "<group>"; };
+		983326BFC16241798B6DC022 /* LCSortComparatorSource.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSortComparatorSource.h; path = "sqli-cordova-lucene-plugin/LCSortComparatorSource.h"; sourceTree = "<group>"; };
+		98D8A9A8D0254DA0A70CF922 /* LCSegmentTermDocs.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentTermDocs.h; path = "sqli-cordova-lucene-plugin/LCSegmentTermDocs.h"; sourceTree = "<group>"; };
+		99A1C3264CAF49279D8D0637 /* LCHits.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCHits.h; path = "sqli-cordova-lucene-plugin/LCHits.h"; sourceTree = "<group>"; };
+		99ACDBEAA4D84223A4280B52 /* LCIndexOutput.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCIndexOutput.h; path = "sqli-cordova-lucene-plugin/LCIndexOutput.h"; sourceTree = "<group>"; };
+		9C28CCFFEB064E36A18C420F /* LCFuzzyQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFuzzyQuery.h; path = "sqli-cordova-lucene-plugin/LCFuzzyQuery.h"; sourceTree = "<group>"; };
+		9E66C5C10F4844B2B0B24E58 /* LCTopDocs.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTopDocs.h; path = "sqli-cordova-lucene-plugin/LCTopDocs.h"; sourceTree = "<group>"; };
+		9FD88C4EEEA746AC99CA657A /* LCTerm.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTerm.h; path = "sqli-cordova-lucene-plugin/LCTerm.h"; sourceTree = "<group>"; };
+		A353A13879384F60A3A7520A /* LCPhrasePrefixQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCPhrasePrefixQuery.h; path = "sqli-cordova-lucene-plugin/LCPhrasePrefixQuery.h"; sourceTree = "<group>"; };
+		A57FF1DF741D4FB3966D9518 /* LCDateTools.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCDateTools.h; path = "sqli-cordova-lucene-plugin/LCDateTools.h"; sourceTree = "<group>"; };
+		A5EB75DD15F84CB4BB2B221D /* LCTermPositions.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermPositions.h; path = "sqli-cordova-lucene-plugin/LCTermPositions.h"; sourceTree = "<group>"; };
+		A7047B48643A4829B39534A2 /* LCSortComparator.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSortComparator.h; path = "sqli-cordova-lucene-plugin/LCSortComparator.h"; sourceTree = "<group>"; };
+		A78E8C30DDAD4E3FB0AD0630 /* LCFieldCacheImpl.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFieldCacheImpl.h; path = "sqli-cordova-lucene-plugin/LCFieldCacheImpl.h"; sourceTree = "<group>"; };
+		A874838A7BBF43488F363578 /* LCSegmentTermEnum.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentTermEnum.h; path = "sqli-cordova-lucene-plugin/LCSegmentTermEnum.h"; sourceTree = "<group>"; };
+		A8BCDA0FEEF44FEE9D2A9778 /* LCTokenStream.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTokenStream.h; path = "sqli-cordova-lucene-plugin/LCTokenStream.h"; sourceTree = "<group>"; };
+		A9CBD299E06D4D59BA22C77D /* LCScorer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCScorer.h; path = "sqli-cordova-lucene-plugin/LCScorer.h"; sourceTree = "<group>"; };
+		AA7A96F8E9224A97AE84B19D /* LCWeight.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCWeight.h; path = "sqli-cordova-lucene-plugin/LCWeight.h"; sourceTree = "<group>"; };
+		AB129813F81A40E0985D1303 /* LCBitVector.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCBitVector.h; path = "sqli-cordova-lucene-plugin/LCBitVector.h"; sourceTree = "<group>"; };
+		ADD3E0D705BC4DE1BE7CE869 /* LCIndexReader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCIndexReader.h; path = "sqli-cordova-lucene-plugin/LCIndexReader.h"; sourceTree = "<group>"; };
+		AEC26B6336A34260A96B3E74 /* LCRangeQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCRangeQuery.h; path = "sqli-cordova-lucene-plugin/LCRangeQuery.h"; sourceTree = "<group>"; };
+		B096D7A2F2A6488BA9CDEFBC /* LCTermInfo.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermInfo.h; path = "sqli-cordova-lucene-plugin/LCTermInfo.h"; sourceTree = "<group>"; };
+		B197D5B1E4014ADC8F08E12D /* LCSegmentTermVector.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentTermVector.h; path = "sqli-cordova-lucene-plugin/LCSegmentTermVector.h"; sourceTree = "<group>"; };
+		B1D6BFF4C9B742E9A33C37FB /* LCSimilarityDelegator.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSimilarityDelegator.h; path = "sqli-cordova-lucene-plugin/LCSimilarityDelegator.h"; sourceTree = "<group>"; };
+		B1EDC1598F74486F84984208 /* LCCachingWrapperFilter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCCachingWrapperFilter.h; path = "sqli-cordova-lucene-plugin/LCCachingWrapperFilter.h"; sourceTree = "<group>"; };
+		B474F0D00AC147B492A7DD51 /* LCPhraseQueue.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCPhraseQueue.h; path = "sqli-cordova-lucene-plugin/LCPhraseQueue.h"; sourceTree = "<group>"; };
+		B5C6682E292949FCB0D9F67F /* LCBooleanQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCBooleanQuery.h; path = "sqli-cordova-lucene-plugin/LCBooleanQuery.h"; sourceTree = "<group>"; };
+		B6BA41BE68034FF59EA12385 /* LCExactPhraseScorer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCExactPhraseScorer.h; path = "sqli-cordova-lucene-plugin/LCExactPhraseScorer.h"; sourceTree = "<group>"; };
+		B70420E210B343698818BDFA /* LucenePlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LucenePlugin.h; path = "sqli-cordova-lucene-plugin/LucenePlugin.h"; sourceTree = "<group>"; };
+		BB3C5914F22745A9BD0A6543 /* PorterStemmer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PorterStemmer.h; path = "sqli-cordova-lucene-plugin/PorterStemmer.h"; sourceTree = "<group>"; };
+		BDDC4B2245FF4D48BC313758 /* LuceneKit.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LuceneKit.h; path = "sqli-cordova-lucene-plugin/LuceneKit.h"; sourceTree = "<group>"; };
+		BEEA48FFDC0A4E269B8CB45C /* Java.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Java.h; path = "sqli-cordova-lucene-plugin/Java.h"; sourceTree = "<group>"; };
+		BF5010BA30DF4997A7C761FA /* LCRangeFilter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCRangeFilter.h; path = "sqli-cordova-lucene-plugin/LCRangeFilter.h"; sourceTree = "<group>"; };
+		C08CE08268AE4A0C96E520DB /* LCRAMInputStream.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCRAMInputStream.h; path = "sqli-cordova-lucene-plugin/LCRAMInputStream.h"; sourceTree = "<group>"; };
+		C1005363D1BB4FD6944D9C6D /* LCReqOptSumScorer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCReqOptSumScorer.h; path = "sqli-cordova-lucene-plugin/LCReqOptSumScorer.h"; sourceTree = "<group>"; };
+		C32BC16114804D2693F64ECF /* LCFieldsReader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFieldsReader.h; path = "sqli-cordova-lucene-plugin/LCFieldsReader.h"; sourceTree = "<group>"; };
+		C3658066C1C1476B898D2EC2 /* libS4LuceneLib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libS4LuceneLib.a; sourceTree = "<group>"; };
+		C3E223F6384D4A248BB69EF1 /* LCIndexModifier.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCIndexModifier.h; path = "sqli-cordova-lucene-plugin/LCIndexModifier.h"; sourceTree = "<group>"; };
+		C460B94FB12B4E7E830EB09A /* LCBooleanScorer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCBooleanScorer.h; path = "sqli-cordova-lucene-plugin/LCBooleanScorer.h"; sourceTree = "<group>"; };
+		C6ACD4856AD646E3860D7090 /* LCScoreDoc.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCScoreDoc.h; path = "sqli-cordova-lucene-plugin/LCScoreDoc.h"; sourceTree = "<group>"; };
+		C95D0DA2D54B411AA3D9F2A3 /* LCDateFilter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCDateFilter.h; path = "sqli-cordova-lucene-plugin/LCDateFilter.h"; sourceTree = "<group>"; };
+		CBAF39D6524E47919CB851D4 /* LCHit.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCHit.h; path = "sqli-cordova-lucene-plugin/LCHit.h"; sourceTree = "<group>"; };
+		CBE0195F45FC46F29EBB6779 /* NSString+Additions.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "NSString+Additions.h"; path = "sqli-cordova-lucene-plugin/NSString+Additions.h"; sourceTree = "<group>"; };
+		CE4EAEEFF8E64E9EA0AC2743 /* LCQueryParser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCQueryParser.h; path = "sqli-cordova-lucene-plugin/LCQueryParser.h"; sourceTree = "<group>"; };
+		CFD0F6E223FD4389A9E188AF /* LCTermScorer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermScorer.h; path = "sqli-cordova-lucene-plugin/LCTermScorer.h"; sourceTree = "<group>"; };
+		D0381CDBF95B4192A85F33F3 /* LCNumberTools.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCNumberTools.h; path = "sqli-cordova-lucene-plugin/LCNumberTools.h"; sourceTree = "<group>"; };
+		D10D8B119C7C4B629380E981 /* LCCharTokenizer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCCharTokenizer.h; path = "sqli-cordova-lucene-plugin/LCCharTokenizer.h"; sourceTree = "<group>"; };
+		D14E4E842115451CAA6A30BE /* LCSearchable.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSearchable.h; path = "sqli-cordova-lucene-plugin/LCSearchable.h"; sourceTree = "<group>"; };
+		D1DDA0F1B7AE40719AE0CAFC /* libxml2.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		D228550C7CE74D6689F8226E /* LCTermVectorsReader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermVectorsReader.h; path = "sqli-cordova-lucene-plugin/LCTermVectorsReader.h"; sourceTree = "<group>"; };
+		D2D10284D3F646FC834C1200 /* LCReqExclScorer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCReqExclScorer.h; path = "sqli-cordova-lucene-plugin/LCReqExclScorer.h"; sourceTree = "<group>"; };
+		D3787952EB674A55968C73EC /* Analysis.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Analysis.h; path = "sqli-cordova-lucene-plugin/Analysis.h"; sourceTree = "<group>"; };
+		D533B28B635440D78E0045F4 /* LCSimpleAnalyzer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSimpleAnalyzer.h; path = "sqli-cordova-lucene-plugin/LCSimpleAnalyzer.h"; sourceTree = "<group>"; };
+		D7E8F36B693B4F929A02DCBD /* LCFieldInfos.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCFieldInfos.h; path = "sqli-cordova-lucene-plugin/LCFieldInfos.h"; sourceTree = "<group>"; };
+		D931783B03F64C6EB7DF6B91 /* LCPhraseScorer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCPhraseScorer.h; path = "sqli-cordova-lucene-plugin/LCPhraseScorer.h"; sourceTree = "<group>"; };
+		E39122D5C15B449D92EF0570 /* LCDefaultSimilarity.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCDefaultSimilarity.h; path = "sqli-cordova-lucene-plugin/LCDefaultSimilarity.h"; sourceTree = "<group>"; };
+		E5B66387612B45F38BCA642C /* LCRAMDirectory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCRAMDirectory.h; path = "sqli-cordova-lucene-plugin/LCRAMDirectory.h"; sourceTree = "<group>"; };
+		E5FBBFD579DA465599640C83 /* LCField.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCField.h; path = "sqli-cordova-lucene-plugin/LCField.h"; sourceTree = "<group>"; };
+		E8D289E70EF348428CD9BEAE /* LCPorterStemFilter.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCPorterStemFilter.h; path = "sqli-cordova-lucene-plugin/LCPorterStemFilter.h"; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EEADD1DAF9F049D583C19524 /* LCMultiReader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCMultiReader.h; path = "sqli-cordova-lucene-plugin/LCMultiReader.h"; sourceTree = "<group>"; };
+		EEDCC1BFD6004B1AB3891A72 /* LCLowerCaseTokenizer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCLowerCaseTokenizer.h; path = "sqli-cordova-lucene-plugin/LCLowerCaseTokenizer.h"; sourceTree = "<group>"; };
+		F0B070248991400AAA16E9E9 /* LCHitIterator.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCHitIterator.h; path = "sqli-cordova-lucene-plugin/LCHitIterator.h"; sourceTree = "<group>"; };
+		F416BE39907B4095893F66C6 /* LCTermFreqVector.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCTermFreqVector.h; path = "sqli-cordova-lucene-plugin/LCTermFreqVector.h"; sourceTree = "<group>"; };
+		F4BCBF07B5904F84A34F8B55 /* LCBooleanClause.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCBooleanClause.h; path = "sqli-cordova-lucene-plugin/LCBooleanClause.h"; sourceTree = "<group>"; };
+		F6C59168ABB74A12A44954E0 /* OpenGLES.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = LuceneApp/config.xml; sourceTree = "<group>"; };
+		FB8D8BBC748E40C999F34A4A /* LCQuery.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCQuery.h; path = "sqli-cordova-lucene-plugin/LCQuery.h"; sourceTree = "<group>"; };
+		FC0B4394E5654E8BB4CE42BD /* MediaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		FC39D4C23DC947318C1C579F /* LCSegmentReader.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = LCSegmentReader.h; path = "sqli-cordova-lucene-plugin/LCSegmentReader.h"; sourceTree = "<group>"; };
+		23F9494BFD0343C0A3DFB2F5 /* CDVFile.m */ = {isa = PBXFileReference; name = "CDVFile.m"; path = "cordova-plugin-file/CDVFile.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0056A271B5A546AE90E6FE4B /* CDVLocalFilesystem.m */ = {isa = PBXFileReference; name = "CDVLocalFilesystem.m"; path = "cordova-plugin-file/CDVLocalFilesystem.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		85CC9C5ED2834753B7304518 /* CDVAssetLibraryFilesystem.m */ = {isa = PBXFileReference; name = "CDVAssetLibraryFilesystem.m"; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		53CA821D6FCE4501BB8FD61C /* CDVFile.h */ = {isa = PBXFileReference; name = "CDVFile.h"; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0B3B07A30DA04E61A1B22B30 /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; name = "CDVLocalFilesystem.h"; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		8CD7718B30EF49949B9F8411 /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; name = "CDVAssetLibraryFilesystem.h"; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				DC09C65150FB41DAAA3C5550 /* libS4iOSLib.a in Frameworks */,
+				E62C80ACF815466F98E74E74 /* libS4LuceneLib.a in Frameworks */,
+				24C5250950C246FAAACEAF71 /* CoreLocation.framework in Frameworks */,
+				272D8A1C62864998B7B49221 /* MediaPlayer.framework in Frameworks */,
+				E05803F363D7444EA0F7FF2F /* MessageUI.framework in Frameworks */,
+				9F54F38386E74E9C8C142055 /* libxml2.dylib in Frameworks */,
+				0B55B697583049F4AA0C81BD /* libz.dylib in Frameworks */,
+				343C804BF629457BBF46328D /* CFNetwork.framework in Frameworks */,
+				AE326706A3A044BCB03D2A8F /* OpenGLES.framework in Frameworks */,
+				A6CF774CA40944C5AE567ECF /* Security.framework in Frameworks */,
+				EFD88F423C554F61BBBAB283 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = LuceneApp/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* LuceneApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* LuceneApp-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = LuceneApp;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* LuceneApp-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+			);
+			name = Resources;
+			path = LuceneApp/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39517B1A79A145CEBAF70486 /* libS4iOSLib.a */,
+				C3658066C1C1476B898D2EC2 /* libS4LuceneLib.a */,
+				5A46FC05899C49F58CA73E27 /* CoreLocation.framework */,
+				FC0B4394E5654E8BB4CE42BD /* MediaPlayer.framework */,
+				8514829973F54905ADA81903 /* MessageUI.framework */,
+				D1DDA0F1B7AE40719AE0CAFC /* libxml2.dylib */,
+				00CFB24736F44EE8BEDA2E1A /* libz.dylib */,
+				7035EC1B151B46799FB96B5F /* CFNetwork.framework */,
+				F6C59168ABB74A12A44954E0 /* OpenGLES.framework */,
+				7F84107F199443C78CDD047B /* Security.framework */,
+				5CFA2F73305448139817CE05 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				B70420E210B343698818BDFA /* LucenePlugin.h */,
+				25DFD2666703468AAD983AD5 /* LucenePlugin.m */,
+				D3787952EB674A55968C73EC /* Analysis.h */,
+				6DDC0E2710B94BF1821687FD /* CodeHandler.h */,
+				091574CC71694E27AE1F9DDB /* CodeParser.h */,
+				1C58DBA1B1B048EE81E9EE2E /* Document.h */,
+				27F173D988D6467CA1FF0358 /* GNUstep.h */,
+				0CDF53F7E1B7483EB3F87D97 /* Index.h */,
+				BEEA48FFDC0A4E269B8CB45C /* Java.h */,
+				7BE401B573D841FB8C8AC6C8 /* LCAnalyzer.h */,
+				AB129813F81A40E0985D1303 /* LCBitVector.h */,
+				F4BCBF07B5904F84A34F8B55 /* LCBooleanClause.h */,
+				B5C6682E292949FCB0D9F67F /* LCBooleanQuery.h */,
+				C460B94FB12B4E7E830EB09A /* LCBooleanScorer.h */,
+				B1EDC1598F74486F84984208 /* LCCachingWrapperFilter.h */,
+				D10D8B119C7C4B629380E981 /* LCCharTokenizer.h */,
+				39DA2A9A4C1F48B38C262CD8 /* LCCompoundFileReader.h */,
+				8B1BDF0D0A2F4515B5CFEB87 /* LCCompoundFileWriter.h */,
+				17331DCAF26746B28BC4F446 /* LCConjunctionScorer.h */,
+				C95D0DA2D54B411AA3D9F2A3 /* LCDateFilter.h */,
+				A57FF1DF741D4FB3966D9518 /* LCDateTools.h */,
+				E39122D5C15B449D92EF0570 /* LCDefaultSimilarity.h */,
+				8CD394A56025473FB5245649 /* LCDirectory.h */,
+				2985749160F041ADA241A0BA /* LCDisjunctionSumScorer.h */,
+				686C72336A244C22A90640BB /* LCDocument.h */,
+				6956E5213B2F4FE7BC2291D1 /* LCDocumentWriter.h */,
+				B6BA41BE68034FF59EA12385 /* LCExactPhraseScorer.h */,
+				2D585D8AAC72422A80F1A94B /* LCExplanation.h */,
+				62F1AAC14D6D4EA3BC21BD1D /* LCFSDirectory.h */,
+				67E2FB48335A4650BD090AED /* LCFSIndexInput.h */,
+				09D09062A6B0408DA5376C07 /* LCFSIndexOutput.h */,
+				E5FBBFD579DA465599640C83 /* LCField.h */,
+				0516BF4D938C45AB87E737B9 /* LCFieldCache.h */,
+				A78E8C30DDAD4E3FB0AD0630 /* LCFieldCacheImpl.h */,
+				5A5AD90A00CA45CFB4EDF6A3 /* LCFieldDoc.h */,
+				42563B37D87E4BE8914831BF /* LCFieldDocSortedHitQueue.h */,
+				48827AE94D584ED698FD5B58 /* LCFieldInfo.h */,
+				D7E8F36B693B4F929A02DCBD /* LCFieldInfos.h */,
+				69C46D54C34C429F95ED79AA /* LCFieldSortedHitQueue.h */,
+				C32BC16114804D2693F64ECF /* LCFieldsReader.h */,
+				29CDE3AB91EA4566A398C8A7 /* LCFieldsWriter.h */,
+				1E58C4BA2930476A98601465 /* LCFilter.h */,
+				634FF62F080F4D2797414239 /* LCFilterIndexReader.h */,
+				36FEA15A3BDE40F9A61FDEBD /* LCFilteredQuery.h */,
+				8F13056C55CC4E07A067A06A /* LCFilteredTermEnum.h */,
+				9C28CCFFEB064E36A18C420F /* LCFuzzyQuery.h */,
+				21F693ADDE2B4EE690B261A9 /* LCFuzzyTermEnum.h */,
+				CBAF39D6524E47919CB851D4 /* LCHit.h */,
+				0E441D5591CF45C2B0F96CB3 /* LCHitCollector.h */,
+				F0B070248991400AAA16E9E9 /* LCHitIterator.h */,
+				1B2B7DE542EF492E8ECFB3E1 /* LCHitQueue.h */,
+				99A1C3264CAF49279D8D0637 /* LCHits.h */,
+				084DE7B622274563B746E469 /* LCImporter.h */,
+				4A4E7709D49E4AB087EED9E8 /* LCIndexInput.h */,
+				91236CFBFFD245E7A71E58D3 /* LCIndexManager.h */,
+				C3E223F6384D4A248BB69EF1 /* LCIndexModifier.h */,
+				99ACDBEAA4D84223A4280B52 /* LCIndexOutput.h */,
+				ADD3E0D705BC4DE1BE7CE869 /* LCIndexReader.h */,
+				1BA3A286D317488AB013A800 /* LCIndexSearcher.h */,
+				53AD74C6C7FF47B68A4A4CF1 /* LCIndexWriter.h */,
+				3BD80F599BE648AC9079C10F /* LCLetterTokenizer.h */,
+				02EBFA87FFEE4C488BC5000A /* LCLowerCaseFilter.h */,
+				EEDCC1BFD6004B1AB3891A72 /* LCLowerCaseTokenizer.h */,
+				708C4293348D4946ADA38D4F /* LCMMapDirectory.h */,
+				6FCFBB2857844CEE8257DB6D /* LCMetadataAttribute.h */,
+				3BA229F2F58545B2A4D75A34 /* LCMultiPhraseQuery.h */,
+				EEADD1DAF9F049D583C19524 /* LCMultiReader.h */,
+				465B9157371E47829D875BB4 /* LCMultiSearcher.h */,
+				9128C75F652D463A8BAA31A3 /* LCMultiTermQuery.h */,
+				6DE8EB6161C84C958698CD49 /* LCMultipleTermPositions.h */,
+				4E7BEF7BD5E44299A947A043 /* LCNonMatchingScorer.h */,
+				D0381CDBF95B4192A85F33F3 /* LCNumberTools.h */,
+				50FFA50047A94708BFBA7245 /* LCPerFieldAnalyzerWrapper.h */,
+				797463D8408D48259C0C8F87 /* LCPhrasePositions.h */,
+				A353A13879384F60A3A7520A /* LCPhrasePrefixQuery.h */,
+				3EAAD0AEF030411B900AD3B8 /* LCPhraseQuery.h */,
+				B474F0D00AC147B492A7DD51 /* LCPhraseQueue.h */,
+				D931783B03F64C6EB7DF6B91 /* LCPhraseScorer.h */,
+				E8D289E70EF348428CD9BEAE /* LCPorterStemFilter.h */,
+				00946CF012DF459B87BB380F /* LCPrefixQuery.h */,
+				30E8CDEEE9FD437C8C061CA5 /* LCPriorityQueue.h */,
+				FB8D8BBC748E40C999F34A4A /* LCQuery.h */,
+				5158CAD45D354ACCA504CAA0 /* LCQueryFilter.h */,
+				CE4EAEEFF8E64E9EA0AC2743 /* LCQueryParser.h */,
+				75CD01D6DA81460BA1038497 /* LCQueryTermVector.h */,
+				E5B66387612B45F38BCA642C /* LCRAMDirectory.h */,
+				027E47AB5B7C490B96E0E8C7 /* LCRAMFile.h */,
+				C08CE08268AE4A0C96E520DB /* LCRAMInputStream.h */,
+				77228AFD935C49FCB20FD5D8 /* LCRAMOutputStream.h */,
+				BF5010BA30DF4997A7C761FA /* LCRangeFilter.h */,
+				AEC26B6336A34260A96B3E74 /* LCRangeQuery.h */,
+				4DD11B6AD0284D03A3764896 /* LCReader.h */,
+				D2D10284D3F646FC834C1200 /* LCReqExclScorer.h */,
+				C1005363D1BB4FD6944D9C6D /* LCReqOptSumScorer.h */,
+				C6ACD4856AD646E3860D7090 /* LCScoreDoc.h */,
+				8A7C514199774A27820C6FC3 /* LCScoreDocComparator.h */,
+				A9CBD299E06D4D59BA22C77D /* LCScorer.h */,
+				D14E4E842115451CAA6A30BE /* LCSearchable.h */,
+				0F84D9D053C54239B7A5A913 /* LCSearcher.h */,
+				178318488E1E4ECA92AD88FF /* LCSegmentInfo.h */,
+				284808F2849B4A9D9ED47753 /* LCSegmentInfos.h */,
+				457257A41A694E918F331472 /* LCSegmentMergeInfo.h */,
+				701D3C4824C64D2897D8E566 /* LCSegmentMergeQueue.h */,
+				2B512A3E17584BCD8BAEF151 /* LCSegmentMerger.h */,
+				FC39D4C23DC947318C1C579F /* LCSegmentReader.h */,
+				98D8A9A8D0254DA0A70CF922 /* LCSegmentTermDocs.h */,
+				A874838A7BBF43488F363578 /* LCSegmentTermEnum.h */,
+				1436EE46ACAD41AE87524D1B /* LCSegmentTermPositionVector.h */,
+				275BC47ABD9F4539A832D772 /* LCSegmentTermPositions.h */,
+				B197D5B1E4014ADC8F08E12D /* LCSegmentTermVector.h */,
+				9116166644694C6DA94B38CF /* LCSimilarity.h */,
+				B1D6BFF4C9B742E9A33C37FB /* LCSimilarityDelegator.h */,
+				D533B28B635440D78E0045F4 /* LCSimpleAnalyzer.h */,
+				04FC1AEC9C17477C94A19E3A /* LCSmallFloat.h */,
+				40A717F9FD684A76A1E12F4C /* LCSort.h */,
+				A7047B48643A4829B39534A2 /* LCSortComparator.h */,
+				983326BFC16241798B6DC022 /* LCSortComparatorSource.h */,
+				1684E65C33224718B5A8DF5E /* LCSortField.h */,
+				3CA82F4D54F943DDAF97181C /* LCStopAnalyzer.h */,
+				6F2797D452504E9EA6CFEF6F /* LCStopFilter.h */,
+				481DB984AAA8463488890CCB /* LCStringReader.h */,
+				9FD88C4EEEA746AC99CA657A /* LCTerm.h */,
+				7923EDE70C6441F0BD641E88 /* LCTermBuffer.h */,
+				97E5905648BE4A99BDC46929 /* LCTermDocs.h */,
+				43C7D4BF70B346C88327059E /* LCTermEnum.h */,
+				F416BE39907B4095893F66C6 /* LCTermFreqVector.h */,
+				B096D7A2F2A6488BA9CDEFBC /* LCTermInfo.h */,
+				248C66108AC0477790B39E98 /* LCTermInfosReader.h */,
+				05E8E51F252044F68DBCC7A4 /* LCTermInfosWriter.h */,
+				7E608379C4E549A9A809F71E /* LCTermPositionVector.h */,
+				A5EB75DD15F84CB4BB2B221D /* LCTermPositions.h */,
+				9689120EC9DB4A29BE1B31C0 /* LCTermQuery.h */,
+				CFD0F6E223FD4389A9E188AF /* LCTermScorer.h */,
+				391109D4C711433885EFF2C0 /* LCTermVectorOffsetInfo.h */,
+				D228550C7CE74D6689F8226E /* LCTermVectorsReader.h */,
+				5D978DF530BB4E2B96981529 /* LCTermVectorsWriter.h */,
+				192B511A31D7428E90D6747F /* LCTextImporter.h */,
+				02BA7507917F47D981BC5981 /* LCToken.h */,
+				8964F03963954482AD35E587 /* LCTokenFilter.h */,
+				A8BCDA0FEEF44FEE9D2A9778 /* LCTokenStream.h */,
+				0413376634BD4399A0F4168C /* LCTokenizer.h */,
+				2356257A0EB1463F8FFF013A /* LCTopDocCollector.h */,
+				9E66C5C10F4844B2B0B24E58 /* LCTopDocs.h */,
+				6929C803A41F4D439F4209D8 /* LCTopFieldDocCollector.h */,
+				95D2C5E4B3984736A24C5923 /* LCTopFieldDocs.h */,
+				AA7A96F8E9224A97AE84B19D /* LCWeight.h */,
+				0E54A944AD7D4A33B1884D64 /* LCWhitespaceAnalyzer.h */,
+				479DD046731B47BBBAE6384B /* LCWhitespaceTokenizer.h */,
+				79BED89FD83F47C7B7735355 /* LCWildcardQuery.h */,
+				441669A3F163459697124535 /* LCWildcardTermEnum.h */,
+				14312DDD28A44A0581961F0C /* LCWordlistLoader.h */,
+				BDDC4B2245FF4D48BC313758 /* LuceneKit.h */,
+				7FF950570AA6401299236A6F /* NSData+Additions.h */,
+				CBE0195F45FC46F29EBB6779 /* NSString+Additions.h */,
+				BB3C5914F22745A9BD0A6543 /* PorterStemmer.h */,
+				536510E4BC4E4D8189ADE0BA /* QueryHandler.h */,
+				0E41CE11BED641458CBBC597 /* QueryParser.h */,
+				05BEC7A992CB4F168C724E9A /* Search.h */,
+				0447C98AC8794091A2A2C6BB /* Store.h */,
+				251E18A8E5E6441E90D64245 /* TokenHandler.h */,
+				2A2D9036612848DD9FE7EF5A /* Util.h */,
+				23F9494BFD0343C0A3DFB2F5 /* CDVFile.m */,
+				0056A271B5A546AE90E6FE4B /* CDVLocalFilesystem.m */,
+				85CC9C5ED2834753B7304518 /* CDVAssetLibraryFilesystem.m */,
+				53CA821D6FCE4501BB8FD61C /* CDVFile.h */,
+				0B3B07A30DA04E61A1B22B30 /* CDVLocalFilesystem.h */,
+				8CD7718B30EF49949B9F8411 /* CDVAssetLibraryFilesystem.h */,
+			);
+			name = Plugins;
+			path = LuceneApp/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* LuceneApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LuceneApp" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = LuceneApp;
+			productName = LuceneApp;
+			productReference = 1D6058910D05DD3D006BFB54 /* LuceneApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 646945T82S;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LuceneApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* LuceneApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				47B535A5E3D345A4B0BE8A99 /* LucenePlugin.h in Sources */,
+				E397144EA29445408A45ADA9 /* LucenePlugin.m in Sources */,
+				FC076C046B8042C2AB86C107 /* Analysis.h in Sources */,
+				3D160CE598ED462DA010957B /* CodeHandler.h in Sources */,
+				F360A798ADD74F089DD8743B /* CodeParser.h in Sources */,
+				E0FA629C9206431B961ADEAB /* Document.h in Sources */,
+				CFFC4D04F9844DC298AC6021 /* GNUstep.h in Sources */,
+				27C3DE711072431AA84296E0 /* Index.h in Sources */,
+				34E20DF481F74070A4B433F0 /* Java.h in Sources */,
+				52CAC407909D41EFBA198A66 /* LCAnalyzer.h in Sources */,
+				85E203CA78E04EDC98E65AC4 /* LCBitVector.h in Sources */,
+				8908026E90354B6DBB8F179D /* LCBooleanClause.h in Sources */,
+				0CD4DD1EDB0F478E8472DA27 /* LCBooleanQuery.h in Sources */,
+				A6DF334C56004A6AA4E12080 /* LCBooleanScorer.h in Sources */,
+				A99DCCE296D543D98D7178EA /* LCCachingWrapperFilter.h in Sources */,
+				9E92E329A1194BAA96966DB6 /* LCCharTokenizer.h in Sources */,
+				59CAD4CDF8A2419AA4C40B8F /* LCCompoundFileReader.h in Sources */,
+				664CA9BF095A49EFBDDDF850 /* LCCompoundFileWriter.h in Sources */,
+				801C48F29EF84E99BCA2CF59 /* LCConjunctionScorer.h in Sources */,
+				40482F6AA0AA4F9B87962B35 /* LCDateFilter.h in Sources */,
+				5D0AA2D5954C44E29F97E000 /* LCDateTools.h in Sources */,
+				0E347042120A486CAE2DF195 /* LCDefaultSimilarity.h in Sources */,
+				B5CA11FF3D81471E998B0F87 /* LCDirectory.h in Sources */,
+				EB90DF0F5B4B45DD899A0589 /* LCDisjunctionSumScorer.h in Sources */,
+				5D7D664E1C7E4D9BAD9D039E /* LCDocument.h in Sources */,
+				57F356C0994B45D4B3879DFE /* LCDocumentWriter.h in Sources */,
+				34C2CB687D934AB3B4D1A2C7 /* LCExactPhraseScorer.h in Sources */,
+				FE47F0AFA3BA40AF85E0DB2A /* LCExplanation.h in Sources */,
+				33F0B2BB83984B648DABA1C9 /* LCFSDirectory.h in Sources */,
+				4DE1272B9B1B4288ABC44185 /* LCFSIndexInput.h in Sources */,
+				CE18CCDDC8EF438CBDDB01F6 /* LCFSIndexOutput.h in Sources */,
+				3CD5B693FF3948938E576A22 /* LCField.h in Sources */,
+				F47CCCF6625647C99031D010 /* LCFieldCache.h in Sources */,
+				1B90EC3390614B3281F63B8F /* LCFieldCacheImpl.h in Sources */,
+				712263DEEC8B4E4C99BDA209 /* LCFieldDoc.h in Sources */,
+				BDCBC247D4D94386BADEAE41 /* LCFieldDocSortedHitQueue.h in Sources */,
+				B2EA25645C4A433FB1B5A91E /* LCFieldInfo.h in Sources */,
+				E45B5EB9042A42598D15926D /* LCFieldInfos.h in Sources */,
+				DDB7CD4DEF944E4AB3DF2F88 /* LCFieldSortedHitQueue.h in Sources */,
+				9054AC0DCDA34C6EB80B50EE /* LCFieldsReader.h in Sources */,
+				FA260ABE364D4819A052E29E /* LCFieldsWriter.h in Sources */,
+				6CFC31DD29FB48338B36AA66 /* LCFilter.h in Sources */,
+				1A80746926144151A64D4308 /* LCFilterIndexReader.h in Sources */,
+				25519FE404C34472AF82E121 /* LCFilteredQuery.h in Sources */,
+				1FF51724DBA547CF8C53AF63 /* LCFilteredTermEnum.h in Sources */,
+				38DB7AFB9E8B48ABA20B2746 /* LCFuzzyQuery.h in Sources */,
+				040626FE883C41A99A068954 /* LCFuzzyTermEnum.h in Sources */,
+				DB32A8D38BEC48B6A3CA312A /* LCHit.h in Sources */,
+				9C4CAB0849644634AACAAB44 /* LCHitCollector.h in Sources */,
+				C776CE154FD94CD0A5E04A37 /* LCHitIterator.h in Sources */,
+				C894A848845041D3ADCE4B49 /* LCHitQueue.h in Sources */,
+				4AF60107A1A64694BEFA1585 /* LCHits.h in Sources */,
+				A8CE154F9145443FA2CC37E5 /* LCImporter.h in Sources */,
+				EC357E47E7EE4DEBB0624C25 /* LCIndexInput.h in Sources */,
+				8BD1ACDDDE94413DA84CDBAB /* LCIndexManager.h in Sources */,
+				C51ABDA0DCFF4CD28FF5E268 /* LCIndexModifier.h in Sources */,
+				88E237753B24493C9B2AF2B5 /* LCIndexOutput.h in Sources */,
+				02C048FC8C6D40B4968A6125 /* LCIndexReader.h in Sources */,
+				7532152373224355BF06EC7F /* LCIndexSearcher.h in Sources */,
+				E3E28528148A4577B9D29210 /* LCIndexWriter.h in Sources */,
+				90E39226045B4BF69B1DE0E9 /* LCLetterTokenizer.h in Sources */,
+				10DE7ECB53CF4E1FBDF48F0F /* LCLowerCaseFilter.h in Sources */,
+				B201F23BA4484107B317A9C2 /* LCLowerCaseTokenizer.h in Sources */,
+				3DFEAC92A22643C0882C661F /* LCMMapDirectory.h in Sources */,
+				21D1E907B904478EAA8864C1 /* LCMetadataAttribute.h in Sources */,
+				34CC9EFA729941768E895CB4 /* LCMultiPhraseQuery.h in Sources */,
+				95A8C0AA90B94C88A875CCA3 /* LCMultiReader.h in Sources */,
+				4D48DCB7642F40D4A4368B48 /* LCMultiSearcher.h in Sources */,
+				31E8E03A1DD1488F8B511285 /* LCMultiTermQuery.h in Sources */,
+				DD75F22CD347483097EB74CA /* LCMultipleTermPositions.h in Sources */,
+				50443C3598824D0DAE058386 /* LCNonMatchingScorer.h in Sources */,
+				79B5C855849C402795C16B25 /* LCNumberTools.h in Sources */,
+				73652D9D979349E1A917386F /* LCPerFieldAnalyzerWrapper.h in Sources */,
+				2A30C07B85234396BC80A640 /* LCPhrasePositions.h in Sources */,
+				5FB02E73320E4C87B1BD0DBA /* LCPhrasePrefixQuery.h in Sources */,
+				FB688FD143694686B5ABA46B /* LCPhraseQuery.h in Sources */,
+				6A7470AD2B684A62AEB3F0CA /* LCPhraseQueue.h in Sources */,
+				062F2F64A3B44FC0AEA3DCB3 /* LCPhraseScorer.h in Sources */,
+				0FD2A69524BA4E19BF2CDB03 /* LCPorterStemFilter.h in Sources */,
+				65924C0E42BB460596EA4F36 /* LCPrefixQuery.h in Sources */,
+				466CD6A2868049668AFA2006 /* LCPriorityQueue.h in Sources */,
+				6DA6F4C568E24070A60DAC10 /* LCQuery.h in Sources */,
+				8F36B67D698543EA9E76F29B /* LCQueryFilter.h in Sources */,
+				8620D61FEB9D4C198BB22AB2 /* LCQueryParser.h in Sources */,
+				BB022A372E354C789D69E278 /* LCQueryTermVector.h in Sources */,
+				FEC292E36EE5452EA65EBE9E /* LCRAMDirectory.h in Sources */,
+				3C55BDEE7D03402C808E264F /* LCRAMFile.h in Sources */,
+				C54551C17907460A97F7026D /* LCRAMInputStream.h in Sources */,
+				444581F030A249578A2D9458 /* LCRAMOutputStream.h in Sources */,
+				673B932323664661A1314894 /* LCRangeFilter.h in Sources */,
+				E5FB17FC4E9644E8956A36CB /* LCRangeQuery.h in Sources */,
+				A5047C1A64A040B38546E2F1 /* LCReader.h in Sources */,
+				6DE5B60AB19D455589B1834C /* LCReqExclScorer.h in Sources */,
+				574F3904A56F4A08BDB488A8 /* LCReqOptSumScorer.h in Sources */,
+				2C42B653984E400F92BD6DE5 /* LCScoreDoc.h in Sources */,
+				9243D8371FBD496B96DDB759 /* LCScoreDocComparator.h in Sources */,
+				A57D53BD608A40CF884D5536 /* LCScorer.h in Sources */,
+				7732ADB62354497EBBD619E0 /* LCSearchable.h in Sources */,
+				C5054943884E4CFE98B9186B /* LCSearcher.h in Sources */,
+				8F745B920C924B7D9D1E9A37 /* LCSegmentInfo.h in Sources */,
+				CE9DEB06D12047CDBA95CFCC /* LCSegmentInfos.h in Sources */,
+				59909CAD1DAE422CB8481B42 /* LCSegmentMergeInfo.h in Sources */,
+				AAACC28126724FFDAE13FEB7 /* LCSegmentMergeQueue.h in Sources */,
+				153526B9AE254C769C067FF5 /* LCSegmentMerger.h in Sources */,
+				E4BCCDD2391A47FDAA25A39D /* LCSegmentReader.h in Sources */,
+				544EAE56AAB7495D92E74BB8 /* LCSegmentTermDocs.h in Sources */,
+				48A9D5D398D04B1489D336BC /* LCSegmentTermEnum.h in Sources */,
+				2BA8A78F605D49C5988CE0DB /* LCSegmentTermPositionVector.h in Sources */,
+				AE7D7554F09342D5B750FF75 /* LCSegmentTermPositions.h in Sources */,
+				087F575C817E4D7E8A3DC515 /* LCSegmentTermVector.h in Sources */,
+				D6BE3D38E0C74339A35CF518 /* LCSimilarity.h in Sources */,
+				D8FB9553CDD0452392004A2D /* LCSimilarityDelegator.h in Sources */,
+				6024DF82C11C4A029DB29C54 /* LCSimpleAnalyzer.h in Sources */,
+				D66C51609AE04EFBB8EE9368 /* LCSmallFloat.h in Sources */,
+				8E716B25FFE2493BB8D557C8 /* LCSort.h in Sources */,
+				B12348E2AC1443B6BB6C23DF /* LCSortComparator.h in Sources */,
+				8AAAC9F1CB154207B1F333BA /* LCSortComparatorSource.h in Sources */,
+				85D7FE7CD2484FA1902050C0 /* LCSortField.h in Sources */,
+				9CCFEDD9F2044521B13C73F6 /* LCStopAnalyzer.h in Sources */,
+				99E64D90785D4083B6BAA32A /* LCStopFilter.h in Sources */,
+				3413B6CAEF494DF1A73487F4 /* LCStringReader.h in Sources */,
+				3887A9CDBD334A5D857FE1B0 /* LCTerm.h in Sources */,
+				1037316DF1A341989524D49B /* LCTermBuffer.h in Sources */,
+				177163D1038E4B97A813B088 /* LCTermDocs.h in Sources */,
+				96B43ED1DB614C52B6AA1C4D /* LCTermEnum.h in Sources */,
+				BECB6250998C48CBA9F6F47D /* LCTermFreqVector.h in Sources */,
+				7B358B01ABF94D998E3995BC /* LCTermInfo.h in Sources */,
+				E3EEF3FF7EF748DE8CA52FD9 /* LCTermInfosReader.h in Sources */,
+				D78DB68792BC4AA5A81DD7E4 /* LCTermInfosWriter.h in Sources */,
+				A019B5DA85774C66BCD9D09A /* LCTermPositionVector.h in Sources */,
+				B350982C1E0A43C8991B6EF6 /* LCTermPositions.h in Sources */,
+				C84CA8E8F70D42958A35CDB0 /* LCTermQuery.h in Sources */,
+				20D6680897DE428D9BB40674 /* LCTermScorer.h in Sources */,
+				486C3E41E2404B959877C4D2 /* LCTermVectorOffsetInfo.h in Sources */,
+				09957DFFA0AF4B5699442272 /* LCTermVectorsReader.h in Sources */,
+				92C306D3D2EE495D8E02B819 /* LCTermVectorsWriter.h in Sources */,
+				EA888C3944154EA2B3B5DBEE /* LCTextImporter.h in Sources */,
+				89EE85AFFF6646FDA9325800 /* LCToken.h in Sources */,
+				0A83091D1C7F4323A37722C2 /* LCTokenFilter.h in Sources */,
+				1C7E2DC0C991495F98CDDB79 /* LCTokenStream.h in Sources */,
+				659AED4D2B3D49D29D76071C /* LCTokenizer.h in Sources */,
+				1E469045838A4B9EB0009423 /* LCTopDocCollector.h in Sources */,
+				B5588FD27A4A4DB5B0B2D1E3 /* LCTopDocs.h in Sources */,
+				6B14E7D1A5BC408C8E9D1563 /* LCTopFieldDocCollector.h in Sources */,
+				02B8E1E8855B45828B26984F /* LCTopFieldDocs.h in Sources */,
+				728FD2E6667D4815AD05FDA4 /* LCWeight.h in Sources */,
+				C030AFD1934C44A58786A522 /* LCWhitespaceAnalyzer.h in Sources */,
+				E0678D6A18FF4960B7E78134 /* LCWhitespaceTokenizer.h in Sources */,
+				89A46E2176A6464AB360E720 /* LCWildcardQuery.h in Sources */,
+				06BF47CF934C435687305046 /* LCWildcardTermEnum.h in Sources */,
+				7E66B366138D4841AE4E5D95 /* LCWordlistLoader.h in Sources */,
+				C815EB86EDDC4842B503AD79 /* LuceneKit.h in Sources */,
+				62EE898A6E49428A95F6C75C /* NSData+Additions.h in Sources */,
+				F1D611E0F4A245809C46CDA8 /* NSString+Additions.h in Sources */,
+				700E79F774C6433096067E13 /* PorterStemmer.h in Sources */,
+				99E3E89744DC42A2A39A27BE /* QueryHandler.h in Sources */,
+				47850930373144F88DE0ED01 /* QueryParser.h in Sources */,
+				BF9CFFCDBD754899880AAD07 /* Search.h in Sources */,
+				A19BB103294646DDB59AF0DB /* Store.h in Sources */,
+				39139CA60454414B999E60FB /* TokenHandler.h in Sources */,
+				0F3AA6AD1C6A47A587CAD8F4 /* Util.h in Sources */,
+				03A0E3CC36F64919B7587400 /* CDVFile.m in Sources */,
+				7D113AD9CB85468285A93456 /* CDVLocalFilesystem.m in Sources */,
+				6637EBFD218B4A00847BFF47 /* CDVAssetLibraryFilesystem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 646945T82S;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LuceneApp/LuceneApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "LuceneApp/LuceneApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LuceneApp/Plugins/../..\"",
+					"\"$(SRCROOT)/LuceneApp/Plugins/../..\"",
+				);
+				PRODUCT_NAME = LuceneApp;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 646945T82S;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LuceneApp/LuceneApp-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "LuceneApp/LuceneApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LuceneApp/Plugins/../..\"",
+					"\"$(SRCROOT)/LuceneApp/Plugins/../..\"",
+				);
+				PRODUCT_NAME = LuceneApp;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LuceneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LuceneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
