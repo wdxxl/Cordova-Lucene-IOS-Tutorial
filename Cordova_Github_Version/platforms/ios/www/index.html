@@ -24,7 +24,8 @@
         
         function search() {
             var textValue = document.getElementById("myText").value;
-            var indexPath = cordova.file.documentsDirectory + 'lucene143/field/';
+            var indexPath = "lucene143/field";
+            //cordova.file.documentsDirectory start with file:///
             LucenePlugin.init(indexPath, "content", 10);
             LucenePlugin.search(textValue, success, failure);
         }

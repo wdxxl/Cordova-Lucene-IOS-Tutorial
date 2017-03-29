@@ -22,12 +22,12 @@
     if (params != nil) {
         NSString* token = [params objectForKey:@"token"];
         NSString* field = [params objectForKey:@"field"];
-        //NSString* indexFolder = [params objectForKey:@"indexFolder"];
-        
+        NSString* path = [params objectForKey:@"indexFolder"]; // file:///path
         // 服务器对应路径
         NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-        NSString *indexFolder = [docDir stringByAppendingPathComponent: @"lucene143/field"];
+        NSString *indexFolder = [docDir stringByAppendingPathComponent: path];// /path
         
+        //NSLog(@"%d", [indexFolder isEqualToString:indexFolder2]); 0 is false
         
         NSNumber* maxResult = [params objectForKey:@"maxResult"];
         
