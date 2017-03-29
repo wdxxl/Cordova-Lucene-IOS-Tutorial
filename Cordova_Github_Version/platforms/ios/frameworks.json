@@ -3,9 +3,9 @@
     "MediaPlayer.framework": 1,
     "MessageUI.framework": 1,
     "libxml2.dylib": 1,
-    "libz.dylib": 1,
+    "libz.dylib": 2,
     "CFNetwork.framework": 1,
     "OpenGLES.framework": 1,
-    "Security.framework": 1,
-    "SystemConfiguration.framework": 1
+    "Security.framework": 2,
+    "SystemConfiguration.framework": 2
 }

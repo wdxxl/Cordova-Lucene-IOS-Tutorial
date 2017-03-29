@@ -180,6 +180,22 @@ module.exports = [
             "cordova"
         ],
         "runs": true
+    },
+    {
+        "id": "cordova-plugin-http.CordovaHttpPlugin",
+        "file": "plugins/cordova-plugin-http/www/cordovaHTTP.js",
+        "pluginId": "cordova-plugin-http",
+        "clobbers": [
+            "CordovaHttpPlugin"
+        ]
+    },
+    {
+        "id": "cordova-plugin-zip.Zip",
+        "file": "plugins/cordova-plugin-zip/zip.js",
+        "pluginId": "cordova-plugin-zip",
+        "clobbers": [
+            "zip"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -188,7 +204,9 @@ module.exports.metadata =
     "sqli-cordova-lucene-plugin": "1.0.0",
     "cordova-plugin-whitelist": "1.3.2",
     "cordova-plugin-compat": "1.1.0",
-    "cordova-plugin-file": "4.3.2"
+    "cordova-plugin-file": "4.3.2",
+    "cordova-plugin-http": "1.2.0",
+    "cordova-plugin-zip": "3.1.0"
 };
 // BOTTOM OF METADATA
 });

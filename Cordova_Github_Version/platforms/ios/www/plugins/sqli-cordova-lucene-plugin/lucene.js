@@ -29,7 +29,6 @@ LucenePlugin.prototype.search = function(token, success, error) {
 		} ]);
 	}
 };
-               
 var lucenePlugin = new LucenePlugin();
 module.exports = lucenePlugin;
 });

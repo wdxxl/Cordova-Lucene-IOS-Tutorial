@@ -9,6 +9,7 @@
 #import "LCTopDocs.h"
 #import "LCScoreDoc.h"
 #import <Cordova/CDV.h>
+#import <Foundation/Foundation.h>
 
 @implementation LucenePlugin
 
@@ -21,7 +22,13 @@
     if (params != nil) {
         NSString* token = [params objectForKey:@"token"];
         NSString* field = [params objectForKey:@"field"];
-        NSString* indexFolder = [params objectForKey:@"indexFolder"];
+        //NSString* indexFolder = [params objectForKey:@"indexFolder"];
+        
+        // 服务器对应路径
+        NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+        NSString *indexFolder = [docDir stringByAppendingPathComponent: @"lucene143/field"];
+        
+        
         NSNumber* maxResult = [params objectForKey:@"maxResult"];
         
         LCFSDirectory *rd = [[LCFSDirectory alloc] initWithPath: indexFolder create: NO];

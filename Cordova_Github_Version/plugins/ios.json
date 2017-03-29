@@ -15,6 +15,12 @@
         },
         "cordova-plugin-file": {
             "PACKAGE_NAME": "com.wdxxl.cordova"
+        },
+        "cordova-plugin-http": {
+            "PACKAGE_NAME": "com.wdxxl.cordova"
+        },
+        "cordova-plugin-zip": {
+            "PACKAGE_NAME": "com.wdxxl.cordova"
         }
     },
     "dependent_plugins": {

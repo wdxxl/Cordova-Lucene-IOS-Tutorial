@@ -10,11 +10,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LuceneApp/Plugins/sqli-cordova-lucene-plugin/LucenePlugin.m"
-            timestampString = "512360133.798939"
+            timestampString = "512455758.303315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "-searchIndex:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LuceneApp/Plugins/sqli-cordova-lucene-plugin/LucenePlugin.m"
+            timestampString = "512458299.850939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-searchIndex:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LuceneApp/Plugins/sqli-cordova-lucene-plugin/LucenePlugin.m"
+            timestampString = "512458299.850939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "-searchIndex:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LuceneApp/Plugins/sqli-cordova-lucene-plugin/LucenePlugin.m"
-            timestampString = "512360471.768401"
+            timestampString = "512458299.850939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "-searchIndex:"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +74,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LuceneApp/Plugins/sqli-cordova-lucene-plugin/LucenePlugin.m"
-            timestampString = "512361236.246066"
+            timestampString = "512458299.850939"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-searchIndex:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LuceneApp/Plugins/sqli-cordova-lucene-plugin/LucenePlugin.m"
+            timestampString = "512458299.850939"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "-searchIndex:"
             landmarkType = "7">
          </BreakpointContent>

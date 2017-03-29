@@ -6,23 +6,30 @@
         <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
         <script type="text/javascript" charset="utf-8">
             function success(result){
+                alert(result.nbHits);
+                alert($('#searchNb').html());
+                
                 $('#searchNb').html(result.nbHits + ' docs');
-                $('#searchResult').html('');
-                $('#searchResult').append('<ul>');
-                result.docs.forEach(function (doc) {
-                                    $('#searchResult').append('<li>' + doc.commonDmcId + '</li>');
-                                    });
-                                    $('#searchResult').append('</ul>');
-                                    alert("success");
+                //$('#searchResult').html('');
+                //$('#searchResult').append('<ul>');
+                //result.docs.forEach(function (doc) {
+                //                    $('#searchResult').append('<li>' + doc.content + '</li>');
+                //                   });
+                //$('#searchResult').append('</ul>');
+                alert("success");
             }
         
         function failure(result){
-            alert("失败");
+            alert("failure");
         }
         
         function search() {
             var textValue = document.getElementById("myText").value;
-            LucenePlugin.init("/storage/sdcard/full_text_index", "documentUnitBridge", 10);
+            //alert(textValue);
+            // var indexPath = cordova.file.applicationDirectory+"www/field/";
+            var indexPath = "/Users/oukagaku/InterviewQuestions/Lucene_2.9.4/lib/lucene143/field/";
+            //alert(indexPath);
+            LucenePlugin.init(indexPath, "content", 10);
             LucenePlugin.search(textValue, success, failure);
         }
         </script>
@@ -30,7 +37,9 @@
     <body style="padding-top:20px;">
         <input id="myText" type="text"/>
         <input type="button" id="btn" onclick="search()" value="Button" />
-        <span id="searchNb"/>
+        </br>
+        <span id="searchNb">search number hits</span>
+        </br>
         <div id="searchResult"/>
     </body>
 </html>

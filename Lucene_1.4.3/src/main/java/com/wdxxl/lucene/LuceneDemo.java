@@ -28,15 +28,11 @@ public class LuceneDemo {
     public void index() throws IOException {
         Analyzer analyzer = new StandardAnalyzer();
 
-        Directory directory = FSDirectory.getDirectory(System.getProperty("user.dir") + "/lib/lucene191/field", true);
+        Directory directory = FSDirectory.getDirectory(System.getProperty("user.dir") + "/lib/lucene143/field", true);
         IndexWriter writer = new IndexWriter(directory, analyzer, true);
         Document doc = null;
         for (int i = 0; i < MockDataUtils.LENGTH; i++) {
             doc = new Document();
-            //doc.add(new Field("id", MockDataUtils.IDS[i], Field.Store.YES, Field..Index.NO));
-            //doc.add(new Field("email", MockDataUtils.EMAILS[i], Field.Store.YES, Field.Index.NO));
-            //doc.add(new Field("content", MockDataUtils.CONTENTS[i], Field.Store.NO, Field.Index.TOKENIZED));
-            //doc.add(new Field("name", MockDataUtils.NAMES[i], Field.Store.YES, Field.Index.TOKENIZED));
             doc.add(new Field("id", MockDataUtils.IDS[i], true, true, true));
             doc.add(new Field("email", MockDataUtils.EMAILS[i], true, true, true));
             doc.add(new Field("content", MockDataUtils.CONTENTS[i], true, true, true));
@@ -47,7 +43,7 @@ public class LuceneDemo {
     }
 
     public void query() throws IOException {
-        Directory directory = FSDirectory.getDirectory(System.getProperty("user.dir") + "/lib/lucene191/field", false);
+        Directory directory = FSDirectory.getDirectory(System.getProperty("user.dir") + "/lib/lucene143/field", false);
         IndexReader reader = IndexReader.open(directory);
         System.out.println("numDocs: " + reader.numDocs());
         System.out.println("maxDocs: " + reader.maxDoc());
@@ -64,7 +60,7 @@ public class LuceneDemo {
             Document doc = searcher.doc(sd.doc);
             // sd.score 评分有对应的公式：加权值和文档所出现的次数有关
             System.out.println("(" + sd.doc + "-" + sd.score + ")" + "email:" + doc.get("email") + ",name:"
-                    + doc.get("name") + ",attach:" + doc.get("attach") + ",date:" + doc.get("date"));
+                    + doc.get("name") + ",content:" + doc.get("content"));
         }
     }
 
