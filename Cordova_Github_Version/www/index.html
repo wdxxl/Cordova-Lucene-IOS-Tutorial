@@ -47,6 +47,13 @@
             LucenePlugin.searchWildcard(textValue, success, failure);
         }
         
+        function searchPrefix() {
+            var textValue = document.getElementById("myText").value;
+            var indexPath = "lucene143/field";
+            LucenePlugin.init(indexPath, "name", 10);
+            LucenePlugin.searchPrefix(textValue, success, failure);
+        }
+        
         function downloadIndex(){
             var url = "http://weitaiping.com/lucene143.zip";
             var params = {};
@@ -88,6 +95,10 @@
         <span>WildcardQuery email: *@wdxxl.com</span>
         <input type="button" id="btn" onclick="searchWildcard()" value="searchWildcard"/>
         </br>
+        <span>PrefixQuery name: j</span>
+        <input type="button" id="btn" onclick="searchPrefix()" value="searchPrefix"/>
+        </br>
+        
         <span id="searchNb">search number hits</span>
         </br>
         <div>
