@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "id": "sqli-cordova-lucene-plugin.LucenePlugin",
-        "file": "plugins/sqli-cordova-lucene-plugin/lucene.js",
-        "pluginId": "sqli-cordova-lucene-plugin",
-        "clobbers": [
-            "LucenePlugin"
-        ]
-    },
-    {
         "id": "cordova-plugin-file.DirectoryEntry",
         "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
         "pluginId": "cordova-plugin-file",
@@ -196,17 +188,25 @@ module.exports = [
         "clobbers": [
             "zip"
         ]
+    },
+    {
+        "id": "sqli-cordova-lucene-plugin.LucenePlugin",
+        "file": "plugins/sqli-cordova-lucene-plugin/lucene.js",
+        "pluginId": "sqli-cordova-lucene-plugin",
+        "clobbers": [
+            "LucenePlugin"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "sqli-cordova-lucene-plugin": "1.0.0",
-    "cordova-plugin-whitelist": "1.3.2",
     "cordova-plugin-compat": "1.1.0",
     "cordova-plugin-file": "4.3.2",
     "cordova-plugin-http": "1.2.0",
-    "cordova-plugin-zip": "3.1.0"
+    "cordova-plugin-whitelist": "1.3.2",
+    "cordova-plugin-zip": "3.1.0",
+    "sqli-cordova-lucene-plugin": "1.0.1"
 };
 // BOTTOM OF METADATA
 });

@@ -24,7 +24,18 @@ cordova plugin add cordova-plugin-http
 cordova plugin add cordova-plugin-zip
 
 cordova platform add ios
+
+--------------------------------
+*Steps to update plugin*
+cordova plugin list
+cordova plugin remove sqli-cordova-lucene-plugin
+
+*Add Local Plugins*
+cordova plugin add /Users/oukagaku/sqli-cordova-lucene-plugin/
+cordova platform add ios
+
 ```
+
 
 ```html
 <html>

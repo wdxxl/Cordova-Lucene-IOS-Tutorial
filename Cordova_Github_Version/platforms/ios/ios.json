@@ -9,15 +9,15 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"LucenePlugin\"><param name=\"ios-package\" value=\"LucenePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"File\"><param name=\"ios-package\" value=\"CDVFile\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
                             "xml": "<feature name=\"CordovaHttpPlugin\"><param name=\"ios-package\" value=\"CordovaHttpPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LucenePlugin\"><param name=\"ios-package\" value=\"LucenePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         }
                     ],
@@ -32,12 +32,6 @@
         }
     },
     "installed_plugins": {
-        "sqli-cordova-lucene-plugin": {
-            "PACKAGE_NAME": "com.wdxxl.cordova"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.wdxxl.cordova"
-        },
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.wdxxl.cordova"
         },
@@ -47,20 +41,18 @@
         "cordova-plugin-http": {
             "PACKAGE_NAME": "com.wdxxl.cordova"
         },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.wdxxl.cordova"
+        },
         "cordova-plugin-zip": {
+            "PACKAGE_NAME": "com.wdxxl.cordova"
+        },
+        "sqli-cordova-lucene-plugin": {
             "PACKAGE_NAME": "com.wdxxl.cordova"
         }
     },
     "dependent_plugins": {},
     "modules": [
-        {
-            "id": "sqli-cordova-lucene-plugin.LucenePlugin",
-            "file": "plugins/sqli-cordova-lucene-plugin/lucene.js",
-            "pluginId": "sqli-cordova-lucene-plugin",
-            "clobbers": [
-                "LucenePlugin"
-            ]
-        },
         {
             "id": "cordova-plugin-file.DirectoryEntry",
             "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
@@ -249,14 +241,22 @@
             "clobbers": [
                 "zip"
             ]
+        },
+        {
+            "id": "sqli-cordova-lucene-plugin.LucenePlugin",
+            "file": "plugins/sqli-cordova-lucene-plugin/lucene.js",
+            "pluginId": "sqli-cordova-lucene-plugin",
+            "clobbers": [
+                "LucenePlugin"
+            ]
         }
     ],
     "plugin_metadata": {
-        "sqli-cordova-lucene-plugin": "1.0.0",
-        "cordova-plugin-whitelist": "1.3.2",
         "cordova-plugin-compat": "1.1.0",
         "cordova-plugin-file": "4.3.2",
         "cordova-plugin-http": "1.2.0",
-        "cordova-plugin-zip": "3.1.0"
+        "cordova-plugin-whitelist": "1.3.2",
+        "cordova-plugin-zip": "3.1.0",
+        "sqli-cordova-lucene-plugin": "1.0.1"
     }
 }
